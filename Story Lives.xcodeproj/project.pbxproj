@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4C01861FDEEA5900AC03E3 /* Story.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C01851FDEEA5900AC03E3 /* Story.storyboard */; };
+		2A4C01881FDEEA6F00AC03E3 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C01871FDEEA6F00AC03E3 /* StoryViewController.swift */; };
 		F3EC8FBA1FDED4CD0096E9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */; };
 		F3EC8FBF1FDED4CD0096E9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EC8FBD1FDED4CD0096E9DC /* Main.storyboard */; };
 		F3EC8FC11FDED4CD0096E9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EC8FC01FDED4CD0096E9DC /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4C01851FDEEA5900AC03E3 /* Story.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
+		2A4C01871FDEEA6F00AC03E3 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		F3EC8FB61FDED4CD0096E9DC /* Story Lives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Story Lives.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EC8FBE1FDED4CD0096E9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 				F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */,
 				F3EC8FC01FDED4CD0096E9DC /* Assets.xcassets */,
 				F3EC8FC21FDED4CD0096E9DC /* LaunchScreen.storyboard */,
+				2A4C01851FDEEA5900AC03E3 /* Story.storyboard */,
 				F3EC8FC51FDED4CD0096E9DC /* Info.plist */,
 			);
 			path = "Story Lives";
@@ -136,6 +141,7 @@
 		F3EC8FEA1FDEE5820096E9DC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A4C01871FDEEA6F00AC03E3 /* StoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			files = (
 				F3EC8FC41FDED4CD0096E9DC /* LaunchScreen.storyboard in Resources */,
 				F3EC8FE81FDEE4C30096E9DC /* Characters.storyboard in Resources */,
+				2A4C01861FDEEA5900AC03E3 /* Story.storyboard in Resources */,
 				F3EC8FC11FDED4CD0096E9DC /* Assets.xcassets in Resources */,
 				F3EC8FBF1FDED4CD0096E9DC /* Main.storyboard in Resources */,
 			);
@@ -284,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4C01881FDEEA6F00AC03E3 /* StoryViewController.swift in Sources */,
 				F3EC8FBA1FDED4CD0096E9DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexizzo.Story-Lives";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexizzo.Story-Lives";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
