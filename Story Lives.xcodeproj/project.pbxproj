@@ -38,6 +38,9 @@
 /* Begin PBXFileReference section */
 		2A4C01851FDEEA5900AC03E3 /* Story.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
 		2A4C01871FDEEA6F00AC03E3 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = SOURCE_ROOT; };
+		DBA90A541FDF2EB50003192B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Story Lives/Views/Base.lproj/Character.swift"; sourceTree = "<group>"; };
+		DBA90A561FDF2EE30003192B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Story Lives/Views/Base.lproj/Story.swift"; sourceTree = "<group>"; };
+		DBA90A581FDF2EF40003192B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Story Lives/Views/Base.lproj/Node.swift"; sourceTree = "<group>"; };
 		F3EC8FB61FDED4CD0096E9DC /* Story Lives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Story Lives.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EC8FBE1FDED4CD0096E9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +137,9 @@
 		F3EC8FE91FDEE5770096E9DC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBA90A571FDF2EF40003192B /* Node.swift */,
+				DBA90A551FDF2EE30003192B /* Story.swift */,
+				DBA90A531FDF2EB50003192B /* Character.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,6 +334,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DBA90A531FDF2EB50003192B /* Character.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA90A541FDF2EB50003192B /* Base */,
+			);
+			name = Character.swift;
+			sourceTree = "<group>";
+		};
+		DBA90A551FDF2EE30003192B /* Story.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA90A561FDF2EE30003192B /* Base */,
+			);
+			name = Story.swift;
+			sourceTree = "<group>";
+		};
+		DBA90A571FDF2EF40003192B /* Node.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBA90A581FDF2EF40003192B /* Base */,
+			);
+			name = Node.swift;
+			sourceTree = "<group>";
+		};
 		F3EC8FBD1FDED4CD0096E9DC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
