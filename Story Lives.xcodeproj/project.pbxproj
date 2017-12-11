@@ -110,7 +110,6 @@
 				F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */,
 				F3EC8FC01FDED4CD0096E9DC /* Assets.xcassets */,
 				F3EC8FC21FDED4CD0096E9DC /* LaunchScreen.storyboard */,
-				2A4C01851FDEEA5900AC03E3 /* Story.storyboard */,
 				F3EC8FC51FDED4CD0096E9DC /* Info.plist */,
 			);
 			path = "Story Lives";
@@ -157,6 +156,7 @@
 			children = (
 				F3EC8FE71FDEE4C30096E9DC /* Characters.storyboard */,
 				F3EC8FBD1FDED4CD0096E9DC /* Main.storyboard */,
+				2A4C01851FDEEA5900AC03E3 /* Story.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
