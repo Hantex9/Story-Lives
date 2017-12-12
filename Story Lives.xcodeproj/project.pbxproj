@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4C01861FDEEA5900AC03E3 /* Story.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C01851FDEEA5900AC03E3 /* Story.storyboard */; };
+		2A4C01881FDEEA6F00AC03E3 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C01871FDEEA6F00AC03E3 /* StoryViewController.swift */; };
 		F3EC8FBA1FDED4CD0096E9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */; };
 		F3EC8FC11FDED4CD0096E9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EC8FC01FDED4CD0096E9DC /* Assets.xcassets */; };
 		F3EC8FC41FDED4CD0096E9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3EC8FC21FDED4CD0096E9DC /* LaunchScreen.storyboard */; };
@@ -35,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A4C01851FDEEA5900AC03E3 /* Story.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
+		2A4C01871FDEEA6F00AC03E3 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = SOURCE_ROOT; };
+		DBA90A541FDF2EB50003192B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Story Lives/Views/Base.lproj/Character.swift"; sourceTree = "<group>"; };
+		DBA90A561FDF2EE30003192B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Story Lives/Views/Base.lproj/Story.swift"; sourceTree = "<group>"; };
+		DBA90A581FDF2EF40003192B /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = "Story Lives/Views/Base.lproj/Node.swift"; sourceTree = "<group>"; };
 		F3EC8FB61FDED4CD0096E9DC /* Story Lives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Story Lives.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3EC8FC01FDED4CD0096E9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +138,9 @@
 		F3EC8FE91FDEE5770096E9DC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBA90A571FDF2EF40003192B /* Node.swift */,
+				DBA90A551FDF2EE30003192B /* Story.swift */,
+				DBA90A531FDF2EB50003192B /* Character.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -453,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexizzo.Story-Lives";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexizzo.Story-Lives";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
