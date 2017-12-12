@@ -22,9 +22,12 @@ protocol StoryProtocol {
     var category: [Category] { get }
     var locked: Bool { get set }
     var progress: Node { get set }
+    var nodes: [Node] { get set }
+    func addNode()
+    func getNextNode()
 }
 
-class Story: StoryProtocol {
+struct Story: StoryProtocol {
     
     var title: String
     var description: String
@@ -46,7 +49,13 @@ class Story: StoryProtocol {
     }
     
     func addNode(type: Type, text: String, question: String?, image: Image, answers: [String: NodeProtocol]?) {
-        let node = Node(type, text, question, image, answers)
+        let node = Node(type, text, question, image, answers) //TO DO: Add controls
         nodes.append(node)
     }
+    
+    func getNextNode(startNode: Node, destinationText: String) -> Node {
+        //TO DO: Add control
+        return startNode.answers[destinationText]
+    }
+    
 }

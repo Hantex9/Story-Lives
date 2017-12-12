@@ -20,7 +20,7 @@ protocol NodeProtocol {
     var image: image { get }
 }
 
-class Node: NodeProtocol {
+struct Node: NodeProtocol {
     
     var type: Type
     var text: String

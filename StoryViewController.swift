@@ -14,7 +14,6 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var storyPageControl: UIPageControl!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     
