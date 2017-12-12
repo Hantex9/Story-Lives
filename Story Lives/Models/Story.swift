@@ -33,7 +33,6 @@ class Story: StoryProtocol {
     var category: Category
     var locked: Bool
     var progress: Node?
-    var nodes: [Node] = [] //Empty Array
     
     init (title: String, description: String, thumbnail: UIImage, characters: [Character], category: Category, locked: Bool, progress: Node?) {
         self.title = title
@@ -45,9 +44,5 @@ class Story: StoryProtocol {
         self.progress = progress
     }
     
-    func addNode(type: Type, text: String, question: String?, image: UIImage, answers: [String: NodeProtocol]?) {
-        let node = Node(type: type, text: text, question: question, image: image, answers: answers)
-        nodes.append(node)
-    }
 }
 
