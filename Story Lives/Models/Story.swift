@@ -8,33 +8,19 @@
 
 import UIKit
 
-enum Category {
-    case Story
-    case Science
-    //Add others category
-}
-
-protocol StoryProtocol {
-    var title: String { get }
-    var description: String { get }
-    var thumbnail: UIImage { get }
-    var characters: [Character] { get set }
-    var category: Category { get }
-    var locked: Bool { get set }
-    var progress: Node? { get set }
-}
-
-class Story: StoryProtocol {
+class Story {
     
     var title: String
     var description: String
     var thumbnail: UIImage
     var characters: [Character]
-    var category: Category
+    var category: String
     var locked: Bool
     var progress: Node?
+    var characterSelected: Character?
+    var categories: [String] = ["Science","Art","History"] //Add others categories
     
-    init (title: String, description: String, thumbnail: UIImage, characters: [Character], category: Category, locked: Bool, progress: Node?) {
+    init (title: String, description: String, thumbnail: UIImage, characters: [Character], category: String, locked: Bool, progress: Node?) {
         self.title = title
         self.description = description
         self.thumbnail = thumbnail
@@ -44,5 +30,9 @@ class Story: StoryProtocol {
         self.progress = progress
     }
     
+    func getNumberOfCharacter() -> Int {
+        return characters.count
+    }
+
 }
 

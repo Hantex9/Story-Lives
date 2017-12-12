@@ -8,31 +8,22 @@
 
 import UIKit
 
-protocol CharacterProtocol {
-    var name: String { get }
-    var description: String { get }
-    var avatar: UIImage { get }
-    var nodes: [Node] { get set }
-}
-
-class Character: CharacterProtocol {
+struct Character {
     
     var name: String
     var description: String
     var avatar: UIImage
     var nodes: [Node]
     
-    init (name: String, description: String, avatar: UIImage) {
+    init (name: String, description: String, avatar: UIImage, node: [Node]) {
         self.name = name
         self.description = description
         self.avatar = avatar
-        nodes = []
+        self.nodes = node
     }
     
-    mutating func addNode(type: Type, text: String, question: String?, image: UIImage, answers: [String: NodeProtocol]?) {
-        let node = Node(type: type, text: text, question: question, image: image, answers: answers)
-        nodes.append(node)
+    func getNumberOfNode() -> Int {
+        return nodes.count
     }
-    
 }
 
