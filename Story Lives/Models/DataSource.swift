@@ -22,9 +22,11 @@ class DataSource {
         
     }
     
-    func getSelectedCharacter() -> Character {
-        return (story?.characterSelected)!
-    }
+    func retrieveCurrentStory() throws -> Story {
+        
+        guard let story = DataSource.shared.currentStory else {
+            throw DataSourceError.invalidStory
+        }
         
         guard let currentChatacter = story.characterSelected else {
             throw DataSourceError.invalidCharacter
