@@ -6,6 +6,12 @@
 //  Copyright © 2017 Alessandro Izzo. All rights reserved.
 //
 
+
+
+//CATEGORIES OF THE STORIES
+let categories: [String] = ["History"] //Add others categories
+
+
 // NODE STORY CHARCTER ONE
 let answerOne = Answer(text: "Conosci", pointer: nodeTwo)
 let answerTwo = Answer(text: "Non mi importa", pointer: nodeFour)
@@ -68,4 +74,6 @@ let berlinoBrother = Story(title: "Titolo storia", description: "Description sto
 
 
 
+//STORIES
+let storyLives: [Story] = [berlinoBrother]
 

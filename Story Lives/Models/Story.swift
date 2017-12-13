@@ -18,7 +18,6 @@ class Story {
     var locked: Bool
     var progress: Node?
     var characterSelected: Character?
-    var categories: [String] = ["Science","Art","History"] //Add others categories
     
     init (title: String, description: String, thumbnail: UIImage, characters: [Character], category: String, locked: Bool, progress: Node?) {
         self.title = title
