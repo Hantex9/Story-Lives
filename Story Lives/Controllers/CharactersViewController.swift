@@ -66,7 +66,8 @@ extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelega
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentIndex = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
         
-        if(currentIndex == 0) {
+        
+        if(currentIndex < 0.3) {
             pageControl.currentPage = 0
         } else {
             pageControl.currentPage = Int(currentIndex) + 1
