@@ -87,6 +87,8 @@
                                         <size key="customSize" width="235" height="370"/>
                                         <connections>
                                             <outlet property="avatar" destination="Exn-AF-xfT" id="VV8-Hl-476"/>
+                                            <outlet property="descriptionCharacter" destination="zBG-Ju-yvm" id="ugC-0E-ImL"/>
+                                            <outlet property="nameCharacter" destination="lO8-RJ-Sup" id="YUt-Ig-IMh"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

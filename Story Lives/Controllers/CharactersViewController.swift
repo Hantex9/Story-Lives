@@ -22,7 +22,6 @@ class CharactersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -40,22 +39,20 @@ extension CharactersViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharactersViewCell", for: indexPath) as! CharactersCollectionViewCell
-        
+        do {
+            cell.avatar.image = try DataSource.shared.retrieveCurrentStory().characters[indexPath.item].avatar
+            cell.nameCharacter.text = try DataSource.shared.retrieveCurrentStory().characters[indexPath.item].name
+            cell.descriptionCharacter.text = try DataSource.shared.retrieveCurrentStory().characters[indexPath.item].description
+        } catch {
+            print("Error")
+        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return try! DataSource.shared.retrieveCurrentStory().characters.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if(cell.center.x >= 0 && cell.center.x <= (UIScreen.main.bounds.size.width)) {
-            pageControl.currentPage = indexPath.item
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-    }
 }
 
 extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelegate {

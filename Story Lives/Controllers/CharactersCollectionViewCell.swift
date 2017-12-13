@@ -10,6 +10,8 @@ import UIKit
 
 class CharactersCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var descriptionCharacter: UITextView!
+    @IBOutlet weak var nameCharacter: UILabel!
     
     override func layoutSubviews() {
         super.layoutSubviews()

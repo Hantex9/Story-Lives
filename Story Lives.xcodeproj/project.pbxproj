@@ -21,6 +21,7 @@
 		DB64031B1FE17EC0006CA029 /* MainViewSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64031A1FE17EC0006CA029 /* MainViewSectionCell.swift */; };
 		DB64031D1FE180FC006CA029 /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64031C1FE180FC006CA029 /* MainCollectionView.swift */; };
 		DB64031F1FE18114006CA029 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64031E1FE18114006CA029 /* MainCollectionViewCell.swift */; };
+		F343954B1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343954A1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift */; };
 		F390DABE1FE07C0D00C257A4 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390DABD1FE07C0D00C257A4 /* CollectionViewFlowLayout.swift */; };
 		F3EC8FBA1FDED4CD0096E9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */; };
 		F3EC8FC11FDED4CD0096E9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3EC8FC01FDED4CD0096E9DC /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		DB64031A1FE17EC0006CA029 /* MainViewSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewSectionCell.swift; sourceTree = "<group>"; };
 		DB64031C1FE180FC006CA029 /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
 		DB64031E1FE18114006CA029 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		F343954A1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		F390DABD1FE07C0D00C257A4 /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		F3EC8FB61FDED4CD0096E9DC /* Story Lives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Story Lives.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				DB64031A1FE17EC0006CA029 /* MainViewSectionCell.swift */,
 				DB64031C1FE180FC006CA029 /* MainCollectionView.swift */,
 				DB64031E1FE18114006CA029 /* MainCollectionViewCell.swift */,
+				F343954A1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				F3EC8FED1FDEE6900096E9DC /* CharactersViewController.swift in Sources */,
 				F3EC8FEF1FDF07460096E9DC /* CharactersCollectionViewCell.swift in Sources */,
 				2A4C01B81FE176AF00AC03E3 /* NodeViewController.swift in Sources */,
+				F343954B1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift in Sources */,
 				F3EC8FBA1FDED4CD0096E9DC /* AppDelegate.swift in Sources */,
 				DB64031F1FE18114006CA029 /* MainCollectionViewCell.swift in Sources */,
 				DB64031D1FE180FC006CA029 /* MainCollectionView.swift in Sources */,

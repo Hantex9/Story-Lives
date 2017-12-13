@@ -11,7 +11,6 @@ import UIKit
 class MainCollectionView: UICollectionView, UICollectionViewDataSource {
 
     let storyLive: [Story] = storyLives
-    var rowCollectionView: Int = 0
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -20,7 +19,7 @@ class MainCollectionView: UICollectionView, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var countStories: Int = 0
         for story in storyLive {
-            if story.category == categories[rowCollectionView] {
+            if story.category == categories[self.tag] {
                 countStories += 1
             }
         }
@@ -29,8 +28,9 @@ class MainCollectionView: UICollectionView, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCell", for: indexPath) as! MainCollectionViewCell
-        cell.storyImage.image = storyLive[indexPath.item].thumbnail
-        cell.storyTitle.text = storyLive[indexPath.item].title
+        cell.storyImage.image = storyLive[indexPath.item + self.tag].thumbnail
+        cell.storyTitle.text = storyLive[indexPath.item + self.tag].title
+
         return cell
     }
 }

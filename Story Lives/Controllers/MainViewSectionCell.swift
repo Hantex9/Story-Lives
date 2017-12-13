@@ -14,6 +14,7 @@ class MainViewSectionCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         // Initialization code
     }
 
@@ -22,9 +23,4 @@ class MainViewSectionCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    
-    
-    
-
 }
