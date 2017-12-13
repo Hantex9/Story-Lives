@@ -22,9 +22,8 @@ struct Character {
         self.nodes = node
     }
     
-    func addNode(type: Type, text: String, question: String?, image: UIImage, answers: [String: NodeProtocol]?) {
-        let node = Node(type: type, text: text, question: question, image: image, answers: answers)
-        nodes.append(node)
+    func getNumberOfNode() -> Int {
+        return nodes.count
     }
 }
 

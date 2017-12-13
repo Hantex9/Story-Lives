@@ -62,21 +62,6 @@ extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelega
     
     //Metodo che viene richiamato quando finisce la decelerazione dello scroll
     //la uso per prendermi la pagina selezionata
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        let x = scrollView.contentOffset.x
-//        let w = scrollView.bounds.size.width
-//        let currentPage = Int(ceil(x/w))
-//        pageControl.currentPage = currentPage
-        
-//        var pageWidth = collectionView.frame.size.width
-//        var currentPage = collectionView.contentOffset.x / pageWidth
-//
-//        if(0.0 != fmodf(Float(currentPage), 1.0)) {
-//            pageControl.currentPage = Int(currentPage) + 1
-//        } else {
-//            pageControl.currentPage = Int(currentPage)
-//        }
-    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentIndex = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
