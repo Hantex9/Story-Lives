@@ -12,6 +12,11 @@ class NodeViewController: UIViewController {
 
     // MARK: - Properties
     var currentStory: Story?
+    @IBOutlet weak var nodeImageView: UIImageView!
+    
+    @IBOutlet weak var contentScrollView: UIScrollView!
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var contentLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +34,14 @@ class NodeViewController: UIViewController {
         } catch {
             print("An unknown error occured.")
         }
+        nodeImageView.image = currentStory?.characterSelected?.nodes[0].image
+        contentLabel.text = currentStory?.characterSelected?.nodes[0].text
     }
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -48,10 +52,4 @@ class NodeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-//    func getStory() throws -> Story {
-//        guard let story = DataSource.shared.story else {
-//            throw DataSourceError.invalidStory
-//        }
-//    }
 }
