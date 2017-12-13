@@ -17,5 +17,9 @@ class DataSource {
     private init() {
         
     }
+    
+    func getSelectedCharacter() -> Character {
+        return (story?.characterSelected)!
+    }
         
 }
