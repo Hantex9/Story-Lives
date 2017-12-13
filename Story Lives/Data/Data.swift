@@ -6,6 +6,12 @@
 //  Copyright © 2017 Alessandro Izzo. All rights reserved.
 //
 
+
+
+//CATEGORIES OF THE STORIES
+let categories: [String] = ["History"] //Add others categories
+
+
 // NODE STORY CHARCTER ONE
 let answerOne = Answer(text: "Conosci", pointer: nodeTwo)
 let answerTwo = Answer(text: "Non mi importa", pointer: nodeFour)
@@ -18,12 +24,6 @@ let answerEight = Answer(text: "Gioca con gli amici", pointer: nodeEight)
 let answerNine = Answer(text: "Guarda le stelle", pointer: nodeNine)
 let answerTen = Answer(text: "Vai verso il rumore",pointer: nodeHappyFinal)
 let answerEleven = Answer(text: "Vai a letto", pointer: nodeSadFinal)
-let categories: [String] = ["Science","Art","History"] //Add others categories
-
-let node1 = Node(type: .Final, text: "", question: "", image: #imageLiteral(resourceName: "images"), answers: [Answer(text: "One"), Answer(text: "Two", pointer: node2)])
-let node2 = Node(type: .Normal, text: "", question: "", image: #imageLiteral(resourceName: "images"), answers: nil)
-let node3 = Node(type: .Normal, text: "", question: "", image: #imageLiteral(resourceName: "images"), answers: [Answer(text: "One", pointer: node1), Answer(text: "Two", pointer: node2)])
-let node4 = Node(type: .Normal, text: "", question: "", image: #imageLiteral(resourceName: "images"), answers: [Answer(text: "One", pointer: node1), Answer(text: "Two", pointer: node2)])
 
 let nodeHappyFinal = Node(type: .Final, text: "happy final", question: "", image: #imageLiteral(resourceName: "images"), answers: [])
 let nodeSadFinal = Node(type: .Final, text: "sad final", question: "", image: #imageLiteral(resourceName: "images"), answers: [])
@@ -74,6 +74,6 @@ let berlinoBrother = Story(title: "Titolo storia", description: "Description sto
 
 
 
-
-let storyLives: [Story] = []
+//STORIES
+let storyLives: [Story] = [berlinoBrother]
 
