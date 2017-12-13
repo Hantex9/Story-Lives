@@ -97,7 +97,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="UJ9-Wl-iQ7" id="2ci-mX-g8e"/>
-                        <outlet property="pageControl" destination="uR4-Xe-tCa" id="i7E-rY-h6Y"/>
+                        <outlet property="pageControl" destination="uR4-Xe-tCa" id="wmN-4m-x5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddh-h6-0op" sceneMemberID="firstResponder"/>

@@ -18,6 +18,8 @@ class CharactersViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var displayedCells: [UICollectionViewCell]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,6 +47,15 @@ extension CharactersViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if(cell.center.x >= 0 && cell.center.x <= (UIScreen.main.bounds.size.width)) {
+            pageControl.currentPage = indexPath.item
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    }
 }
 
 extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelegate {
@@ -52,10 +63,29 @@ extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelega
     //Metodo che viene richiamato quando finisce la decelerazione dello scroll
     //la uso per prendermi la pagina selezionata
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        let x = scrollView.contentOffset.x
-        let w = scrollView.bounds.size.width
-        let currentPage = Int(ceil(x/w))
-        pageControl.currentPage = currentPage
+//        let x = scrollView.contentOffset.x
+//        let w = scrollView.bounds.size.width
+//        let currentPage = Int(ceil(x/w))
+//        pageControl.currentPage = currentPage
         
+//        var pageWidth = collectionView.frame.size.width
+//        var currentPage = collectionView.contentOffset.x / pageWidth
+//
+//        if(0.0 != fmodf(Float(currentPage), 1.0)) {
+//            pageControl.currentPage = Int(currentPage) + 1
+//        } else {
+//            pageControl.currentPage = Int(currentPage)
+//        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let currentIndex = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
+        
+        if(currentIndex == 0) {
+            pageControl.currentPage = 0
+        } else {
+            pageControl.currentPage = Int(currentIndex) + 1
+        }
     }
 }
+
