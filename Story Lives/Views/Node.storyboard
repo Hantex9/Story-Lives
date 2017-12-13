@@ -10,14 +10,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Node View Controller-->
         <scene sceneID="Out-cD-uSe">
             <objects>
-                <viewController id="8A7-2O-R9m" sceneMemberID="viewController">
+                <viewController id="8A7-2O-R9m" customClass="NodeViewController" customModule="Story_Lives" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xWq-RF-ZXO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hTF-au-xkT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="1UG-dJ-Rga"/>
+                                    <constraint firstAttribute="height" constant="333" id="pJe-fT-hvb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hTF-au-xkT" firstAttribute="centerX" secondItem="uHk-Xd-Eve" secondAttribute="centerX" id="1lG-MO-F8i"/>
+                            <constraint firstItem="hTF-au-xkT" firstAttribute="top" secondItem="xWq-RF-ZXO" secondAttribute="top" id="NZl-Tn-030"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uHk-Xd-Eve"/>
                     </view>
                 </viewController>
