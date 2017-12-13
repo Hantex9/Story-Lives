@@ -84,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB1E20561FE03D7200239D02 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DB1E20571FE03D8300239D02 /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		F3EC8FAD1FDED4CD0096E9DC = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +115,7 @@
 		F3EC8FB81FDED4CD0096E9DC /* Story Lives */ = {
 			isa = PBXGroup;
 			children = (
+				DB1E20561FE03D7200239D02 /* Data */,
 				F3EC8FEB1FDEE58B0096E9DC /* Views */,
 				F3EC8FEA1FDEE5820096E9DC /* Controllers */,
 				F3EC8FE91FDEE5770096E9DC /* Models */,
@@ -142,6 +151,8 @@
 				2A4C01891FE006D100AC03E3 /* Node.swift */,
 				2A4C018B1FE006EB00AC03E3 /* Story.swift */,
 				2A4C018D1FE0070D00AC03E3 /* Character.swift */,
+				DB1E20521FE028C400239D02 /* DataSource.swift */,
+				DB1E20541FE0374900239D02 /* Answer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB01BB031FE0603C00069F62 /* FirstPage.storyboard in Resources */,
 				F3EC8FC41FDED4CD0096E9DC /* LaunchScreen.storyboard in Resources */,
 				F3EC8FE81FDEE4C30096E9DC /* Character.storyboard in Resources */,
 				F3EC8FC11FDED4CD0096E9DC /* Assets.xcassets in Resources */,
@@ -305,6 +317,8 @@
 				2A4C018E1FE0070D00AC03E3 /* Character.swift in Sources */,
 				2A4C018A1FE006D100AC03E3 /* Node.swift in Sources */,
 				2A4C018C1FE006EB00AC03E3 /* Story.swift in Sources */,
+				DB1E20581FE03D8300239D02 /* Data.swift in Sources */,
+				DB1E20551FE0374900239D02 /* Answer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,10 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PX7W6UA6Y;
+				DEVELOPMENT_TEAM = B487MU554C;
 				INFOPLIST_FILE = "Story Lives/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexizzo.Story-Lives";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appleacademy.Story-Lives";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -478,10 +492,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PX7W6UA6Y;
+				DEVELOPMENT_TEAM = B487MU554C;
 				INFOPLIST_FILE = "Story Lives/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alexizzo.Story-Lives";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appleacademy.Story-Lives";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
