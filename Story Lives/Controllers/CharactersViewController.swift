@@ -18,8 +18,6 @@ class CharactersViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var displayedCells: [UICollectionViewCell]!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
@@ -27,6 +25,8 @@ class CharactersViewController: UIViewController {
         
         self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast
         pageControl.numberOfPages = collectionView.numberOfItems(inSection: 0)
+        
+        self.pageControl.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
     }
 }
 

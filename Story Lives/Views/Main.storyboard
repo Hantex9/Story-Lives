@@ -18,7 +18,7 @@
         <!--Main View Controller-->
         <scene sceneID="RkD-rj-9KN">
             <objects>
-                <tableViewController id="nVi-jP-QY4" customClass="MainViewController" customModule="Story_Lives" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainView" id="nVi-jP-QY4" customClass="MainViewController" customModule="Story_Lives" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="28" id="4ib-sa-8R9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--Popup View Controller-->
         <scene sceneID="6gy-37-WQc">
             <objects>
-                <viewController id="Grf-Xk-9Ue" customClass="PopupViewController" customModule="Story_Lives" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PopupView" id="Grf-Xk-9Ue" customClass="PopupViewController" customModule="Story_Lives" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKY-Eb-vqK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

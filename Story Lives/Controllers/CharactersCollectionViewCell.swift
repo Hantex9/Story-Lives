@@ -15,7 +15,7 @@ class CharactersCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layer.cornerRadius = 18.0
+        self.layer.cornerRadius = 13.0
     }
     
 }
