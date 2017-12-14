@@ -23,7 +23,6 @@ class MainViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
         return categories.count
     }
 
@@ -50,11 +49,13 @@ class MainViewController: UITableViewController {
     
     //Used for changing the section background color
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        self.tableView.contentInset = UIEdgeInsets(top: 20.0,left: 20.0,bottom: 0.0,right: 0.0)
         let headerView = view as! UITableViewHeaderFooterView
         headerView.textLabel?.textColor = UIColor.lightGray
-//        headerView.textLabel?.frame = CGRect(x: (headerView.textLabel?.frame.origin.x)!, y: (headerView.textLabel?.frame.origin.y)!, width: 57.0, height: 19.0)
+        headerView.textLabel?.frame = CGRect(x: 10.0, y: 11.0, width: 57.0, height: 19.0)
         headerView.textLabel?.font = UIFont(name: "OpenSans", size: 14.0)
         view.tintColor = UIColor.clear
+       //print(headerView.textLabel?.frame)
     }
     
     //Distance from Section title and cells
