@@ -12,11 +12,14 @@ class NodeViewController: UIViewController {
 
     // MARK: - Properties
     var currentStory: Story?
+    var currentNode: Node?
     @IBOutlet weak var nodeImageView: UIImageView!
-    
     @IBOutlet weak var contentScrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var firstAnswerButton: UIButton!
+    @IBOutlet weak var secondAnswerButton: UIButton!
+    @IBOutlet weak var finishStoryButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,22 +37,38 @@ class NodeViewController: UIViewController {
         } catch {
             print("An unknown error occured.")
         }
-        nodeImageView.image = currentStory?.characterSelected?.nodes[0].image
-        contentLabel.text = currentStory?.characterSelected?.nodes[0].text
+        currentNode = currentStory?.characterSelected?.nodes[0]
+        updateView(pointer: currentNode)
+        finishStoryButton.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func chooseFirstAnswer(_ sender: UIButton) {
+        updateView(pointer: currentNode?.answers?[0].pointer)
     }
-    */
+    
+    @IBAction func chooseSecondAnswer(_ sender: UIButton) {
+        updateView(pointer: currentNode?.answers?[1].pointer)
+    }
+    
+    func updateView(pointer: Node?) {
+        nodeImageView.image = pointer?.image
+        contentLabel.text = pointer?.text
+        firstAnswerButton.setTitle(pointer?.answers?[0].text, for: .normal)
+        secondAnswerButton.setTitle(pointer?.answers?[1].text, for: .normal)
+        if (pointer?.type == .Final) {
+            firstAnswerButton.isHidden = true
+            secondAnswerButton.isHidden = true
+            finishStoryButton.isHidden = false
+        }
+    }
+    
+    @IBAction func finishStory(_ sender: UIButton) {
+        print("Go back to main view.")
+    }
+    
 }
