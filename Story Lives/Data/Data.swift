@@ -70,15 +70,12 @@ let arrayCharacterTwo = [nodeOne2, nodeTwo2, nodeThree2, nodeFour2, nodeFive2, n
 
 let characterTwo = Character(name: "Ovest", description: "character description", avatar: #imageLiteral(resourceName: "images"), node: arrayCharacterTwo)
 
-let berlinoBrother = Story(title: "Titolo storia", description: "Description story", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
-
-
-let emptyStory = Story(title: "testo", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: true, progress: nil)
+let berlinoBrother = Story(title: "Titolo storia1", description: "Description story", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
+let emptyStory = Story(title: "testo1", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: true, progress: nil)
 let scienceStory = Story(title: "carmine", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "Science", locked: true, progress: nil)
 
-
 //STORIES
-let storyLives: [Story] = [berlinoBrother, emptyStory, scienceStory]
+let storyLives: [Story] = [berlinoBrother, scienceStory, emptyStory]
 
 
 

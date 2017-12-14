@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
+    @IBOutlet weak var headerTable: UILabel!
     let storyLive: [Story] = storyLives
     
     fileprivate let heightRows: CGFloat = 223.0 //Height of the rows
@@ -17,21 +18,17 @@ class MainViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return categories.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return 1
     }
     
@@ -43,6 +40,7 @@ class MainViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! MainViewSectionCell
         cell.collectionView.tag = indexPath.row + indexPath.section
         cell.collectionView.dataSource = cell.collectionView
+        cell.collectionView.delegate = cell.collectionView
         return cell
     }
     
@@ -54,7 +52,8 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView = view as! UITableViewHeaderFooterView
         headerView.textLabel?.textColor = UIColor.lightGray
-        headerView.textLabel?.font = UIFont(name: "OpenSans-Justify", size: 14.0)
+//        headerView.textLabel?.frame = CGRect(x: (headerView.textLabel?.frame.origin.x)!, y: (headerView.textLabel?.frame.origin.y)!, width: 57.0, height: 19.0)
+        headerView.textLabel?.font = UIFont(name: "OpenSans", size: 14.0)
         view.tintColor = UIColor.clear
     }
     
