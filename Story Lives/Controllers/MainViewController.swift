@@ -54,12 +54,13 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let headerView = view as! UITableViewHeaderFooterView
         headerView.textLabel?.textColor = UIColor.lightGray
+        headerView.textLabel?.font = UIFont(name: "OpenSans-Justify", size: 14.0)
         view.tintColor = UIColor.clear
     }
     
     //Distance from Section title and cells
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 8.0
+        return 13.0
     }
 }
 

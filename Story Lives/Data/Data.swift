@@ -73,8 +73,8 @@ let characterTwo = Character(name: "Ovest", description: "character description"
 let berlinoBrother = Story(title: "Titolo storia", description: "Description story", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
 
 
-let emptyStory = Story(title: "Empty", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: true, progress: nil)
-let scienceStory = Story(title: "Empty", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "Science", locked: true, progress: nil)
+let emptyStory = Story(title: "testo", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: true, progress: nil)
+let scienceStory = Story(title: "carmine", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "Science", locked: true, progress: nil)
 
 
 //STORIES
