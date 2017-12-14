@@ -70,5 +70,9 @@ extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelega
             pageControl.currentPage = Int(currentIndex) + 1
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        DataSource.shared.getCurrentStory()?.characterSelected = DataSource.shared.getCurrentStory()?.characters[indexPath.item] 
+    }
 }
 

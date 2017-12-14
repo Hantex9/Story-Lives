@@ -89,6 +89,7 @@
                                             <outlet property="avatar" destination="Exn-AF-xfT" id="VV8-Hl-476"/>
                                             <outlet property="descriptionCharacter" destination="zBG-Ju-yvm" id="ugC-0E-ImL"/>
                                             <outlet property="nameCharacter" destination="lO8-RJ-Sup" id="YUt-Ig-IMh"/>
+                                            <segue destination="XhL-VJ-DDX" kind="show" id="qEM-pm-nxl"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -105,6 +106,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddh-h6-0op" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--NodeStoryboard-->
+        <scene sceneID="8d3-3J-atV">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYt-JU-Fp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Node" referencedIdentifier="NodeStoryboard" id="XhL-VJ-DDX" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="123"/>
         </scene>
     </scenes>
     <resources>
