@@ -8,9 +8,11 @@
 
 import UIKit
 
-class MainCollectionView: UICollectionView, UICollectionViewDataSource {
+class MainCollectionView: UICollectionView, UICollectionViewDataSource, UICollectionViewDelegate {
 
     let storyLive: [Story] = storyLives
+    
+    var counter: Int = 0
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -28,9 +30,29 @@ class MainCollectionView: UICollectionView, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCell", for: indexPath) as! MainCollectionViewCell
-        cell.storyImage.image = storyLive[indexPath.item + self.tag].thumbnail
-        cell.storyTitle.text = storyLive[indexPath.item + self.tag].title
-
+        
+        let category: String = categories[self.tag]
+        for (index,story) in storyLive.enumerated() {
+            if index >= self.counter && story.category == category {
+                cell.storyImage.image = storyLive[index].thumbnail
+                cell.storyTitle.text = storyLive[index].title
+                break
+            }
+        }
+        self.counter += 1
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let category: String = categories[self.tag]
+        let infoCell = self.cellForItem(at: indexPath) as! MainCollectionViewCell
+        for story in storyLive {
+            if story.category == category && story.title == infoCell.storyTitle.text{
+                if(!DataSource.shared.setCurrentStory(story: story)) {
+                   print("Error about loading current Story")
+                }
+            }
+        }
+        
     }
 }

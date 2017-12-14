@@ -9,11 +9,11 @@
 import UIKit
 
 class MainCollectionViewFlowLayout: UICollectionViewFlowLayout {
-    fileprivate let minimumSpacing: CGFloat = 2.0
+    fileprivate let minimumSpacing: CGFloat = 0.5
     fileprivate let distanceToTheMargins: CGFloat = 10.0
     
     override func prepare() {
-        self.minimumLineSpacing = minimumSpacing
+        self.minimumLineSpacing = self.minimumSpacing
         
         self.sectionInset = UIEdgeInsetsMake(self.sectionInset.top, self.sectionInset.left + distanceToTheMargins - 1.0, self.sectionInset.bottom, self.sectionInset.right + distanceToTheMargins)
     }

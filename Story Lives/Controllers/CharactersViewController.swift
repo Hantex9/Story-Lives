@@ -39,18 +39,19 @@ extension CharactersViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharactersViewCell", for: indexPath) as! CharactersCollectionViewCell
-        do {
-            cell.avatar.image = try DataSource.shared.retrieveCurrentStory().characters[indexPath.item].avatar
-            cell.nameCharacter.text = try DataSource.shared.retrieveCurrentStory().characters[indexPath.item].name
-            cell.descriptionCharacter.text = try DataSource.shared.retrieveCurrentStory().characters[indexPath.item].description
-        } catch {
-            print("Error")
+        if let currentStory = DataSource.shared.getCurrentStory()?.characters[indexPath.item] {
+            cell.avatar.image = currentStory.avatar
+            cell.nameCharacter.text = currentStory.name
+            cell.descriptionCharacter.text = currentStory.description
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return try! DataSource.shared.retrieveCurrentStory().characters.count
+        guard let numberCharacters = DataSource.shared.getCurrentStory()?.characters.count else {
+            return 0
+        }
+        return numberCharacters
     }
     
 }
@@ -62,7 +63,6 @@ extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelega
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let currentIndex = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
-        
         
         if(currentIndex < 0.3) {
             pageControl.currentPage = 0

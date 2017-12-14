@@ -53,4 +53,21 @@ class DataSource {
         
         return story
     }
+    
+    func setCurrentStory(story: Story) -> Bool {
+        self.currentStory = story
+        
+        if self.currentStory === story {
+            return true
+        }
+        return false
+    }
+    
+    func removeCurrentStory() {
+        self.currentStory = nil
+    }
+    
+    func getCurrentStory() -> Story? {
+        return self.currentStory
+    }
 }
