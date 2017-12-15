@@ -87,16 +87,13 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCell", for: indexPath) as! MainCollectionViewCell
         let category: String = categories[collectionView.tag]
         for (index,story) in storyLive.enumerated() {
-            print(self.counter)
             if index >= self.counter && story.category == category {
                 cell.storyImage.image = storyLive[index].thumbnail
                 cell.storyTitle.text = storyLive[index].title
-                print("Index: " + String(index))
                 break
             }
         }
         self.counter += 1
-        print("New Counter: " + String(self.counter))
         return cell
     }
     
