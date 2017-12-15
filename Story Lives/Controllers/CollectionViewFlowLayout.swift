@@ -11,7 +11,7 @@ import UIKit
 public class CollectionViewFlowLayout: UICollectionViewFlowLayout {
     // Mark: Constants
     fileprivate struct Constants {
-        static let zoomFactor: CGFloat = 0.3
+        static let zoomFactor: CGFloat = 0.25
         static let itemWidth: CGFloat = 235       //Width of the Cell when focussed
         static let itemHeight: CGFloat = 340      //Height of the Cell when focussed
         static let minLineSpacing: CGFloat = 57.0
@@ -22,7 +22,7 @@ public class CollectionViewFlowLayout: UICollectionViewFlowLayout {
     override public func prepare() {
         super.prepare()
         
-        itemSize = CGSize(width: Constants.itemWidth, height: Constants.itemHeight)
+        itemSize = CGSize(width: Constants.itemWidth, height: collectionView!.frame.height * 0.8)
         minimumLineSpacing = Constants.minLineSpacing
         
         sectionInset = UIEdgeInsetsMake(100.0, 65.0, 100, 60.0)
