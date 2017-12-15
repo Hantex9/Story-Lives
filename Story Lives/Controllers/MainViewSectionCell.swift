@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewSectionCell: UITableViewCell {
 
-    @IBOutlet weak var collectionView: MainCollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

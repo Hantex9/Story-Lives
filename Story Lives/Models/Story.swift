@@ -11,15 +11,15 @@ import UIKit
 class Story {
     
     var title: String
-    var description: String
+    var description: String?
     var thumbnail: UIImage
-    var characters: [Character]
+    var characters: [Character]?
     var category: String
     var locked: Bool
     var progress: Node?
     var characterSelected: Character?
     
-    init (title: String, description: String, thumbnail: UIImage, characters: [Character], category: String, locked: Bool, progress: Node?) {
+    init (title: String, description: String?, thumbnail: UIImage, characters: [Character]?, category: String, locked: Bool, progress: Node?) {
         self.title = title
         self.description = description
         self.thumbnail = thumbnail
@@ -29,8 +29,12 @@ class Story {
         self.progress = progress
     }
     
-    func getNumberOfCharacter() -> Int {
-        return characters.count
+    func getNumberOfCharacter() -> Int? {
+        return self.characters!.count
+    }
+    
+    func isLocked() -> Bool {
+        return self.locked
     }
 
 }

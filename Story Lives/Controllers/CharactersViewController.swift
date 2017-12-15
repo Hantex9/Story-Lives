@@ -39,7 +39,7 @@ extension CharactersViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharactersViewCell", for: indexPath) as! CharactersCollectionViewCell
-        if let currentStory = DataSource.shared.getCurrentStory()?.characters[indexPath.item] {
+        if let currentStory = DataSource.shared.getCurrentStory()?.characters![indexPath.item] {
             cell.avatar.image = currentStory.avatar
             cell.nameCharacter.text = currentStory.name
             cell.descriptionCharacter.text = currentStory.description
@@ -48,7 +48,7 @@ extension CharactersViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let numberCharacters = DataSource.shared.getCurrentStory()?.characters.count else {
+        guard let numberCharacters = DataSource.shared.getCurrentStory()?.characters!.count else {
             return 0
         }
         return numberCharacters
@@ -72,7 +72,7 @@ extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        DataSource.shared.getCurrentStory()?.characterSelected = DataSource.shared.getCurrentStory()?.characters[indexPath.item] 
+        DataSource.shared.getCurrentStory()?.characterSelected = DataSource.shared.getCurrentStory()?.characters![indexPath.item]
     }
 }
 
