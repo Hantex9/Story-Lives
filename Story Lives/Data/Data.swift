@@ -9,7 +9,7 @@
 
 
 //CATEGORIES OF THE STORIES
-let categories: [String] = ["History", "Science"] //Add others categories
+let categories: [String] = ["History", "Science", "Leterature"] //Add others categories
 
 
 // NODE STORY CHARCTER ONE
@@ -73,9 +73,10 @@ let characterTwo = Character(name: "Ovest", description: "character description"
 let berlinoBrother = Story(title: "Titolo storia1", description: "Description story", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
 let emptyStory = Story(title: "testo1", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: true, progress: nil)
 let scienceStory = Story(title: "carmine", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "Science", locked: true, progress: nil)
+let divinaCommediaStory = Story(title: "Divina Commedia", description: nil, thumbnail: #imageLiteral(resourceName: "Divina Commedia"), characters: nil, category: "Leterature", locked: true, progress: nil)
 
 //STORIES
-let storyLives: [Story] = [berlinoBrother, scienceStory, emptyStory]
+let storyLives: [Story] = [berlinoBrother, scienceStory, emptyStory, divinaCommediaStory]
 
 
 
