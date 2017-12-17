@@ -42,7 +42,12 @@ class NodeViewController: UIViewController {
         }
         currentNode = currentStory?.characterSelected?.nodes[0]
         updateView(pointer: currentNode)
+        contentLabel.font = UIFont(name: "Merriweather", size: 17)
         finishStoryButton.isHidden = true
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
     override func didReceiveMemoryWarning() {
