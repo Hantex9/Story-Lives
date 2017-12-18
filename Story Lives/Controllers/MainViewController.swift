@@ -56,7 +56,7 @@ class MainViewController: UITableViewController {
         let headerView = view as! UITableViewHeaderFooterView
         headerView.textLabel?.textColor = UIColor.lightGray
         headerView.textLabel?.font = UIFont(name: "OpenSans", size: 14.0)
-        view.tintColor = UIColor.clear
+        view.tintColor = UIColor.white
     }
     
     //Distance from Section title and cells

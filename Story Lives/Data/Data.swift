@@ -9,7 +9,7 @@
 
 
 //CATEGORIES OF THE STORIES
-let categories: [String] = ["History", "Science", "Leterature"] //Add others categories
+let categories: [String] = ["History", "Science", "Leterature", "Art History"] //Add others categories
 
 
 // NODE STORY CHARCTER ONE
@@ -104,15 +104,33 @@ let arrayCharacterTwo = [nodeOne2, nodeTwo2, nodeThree2, nodeFour2, nodeFive2, n
 let characterTwo = Character(name: "Ovest", description: "character description", avatar: #imageLiteral(resourceName: "images"), node: arrayCharacterTwo)
 
 //Berlino Story
-let berlinoBrother = Story(title: "Titolo storia1", description: "Description story", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
+let berlinoBrother = Story(title: "Berlino Brothers", description: "Description story", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
 
 //Locked Stories
-let emptyStory = Story(title: "testo1", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: true, progress: nil)
-let scienceStory = Story(title: "carmine", description: "test", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "Science", locked: true, progress: nil)
-let divinaCommediaStory = Story(title: "Divina Commedia", description: nil, thumbnail: #imageLiteral(resourceName: "Divina Commedia"), characters: nil, category: "Leterature", locked: true, progress: nil)
+//SCIENCE
+let esplorationSpace = Story(title: "Exploration of Space", description: nil, thumbnail: #imageLiteral(resourceName: "Esplorazione dello spazio"), characters: nil, category: "Science", locked: true, progress: nil)
+let volcanoVesuvio = Story(title: "The Volcano Vesuvio", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Science", locked: true, progress: nil)
+let lastEarthquake = Story(title: "The last Earthquake", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Science", locked: true, progress: nil)
+let childChemist = Story(title: "The Child Chemist", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Science", locked: true, progress: nil)
+
+//LETERATURE
+let promessiSposi = Story(title: "The Promessi Sposi", description: nil, thumbnail: #imageLiteral(resourceName: "Promessi Sposi"), characters: nil, category: "Leterature", locked: true, progress: nil)
+let troianDefeat = Story(title: "The trojan defeat", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Leterature", locked: true, progress: nil)
+let wrathAchilles = Story(title: "The wrath of Achilles", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Leterature", locked: true, progress: nil)
+let journeyUlysses = Story(title: "The journey of Ulysses", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Leterature", locked: true, progress: nil)
+let hellDante = Story(title: "Dante in the hell", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Leterature", locked: true, progress: nil)
+
+//ART HISTORY
+let leonardoLife = Story(title: "Leonardo's Life", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Art History", locked: true, progress: nil)
+let raffaelloSchool = Story(title: "Raffaello's School in Atene", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "Art History", locked: true, progress: nil)
+
+//HISTORY
+let battleAlesia = Story(title: "The Battle of Alesia", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "History", locked: true, progress: nil)
+let cesareHistory = Story(title: "Giulio Cesare's history", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "History", locked: true, progress: nil)
+let defeatTeotoburg = Story(title: "The defeat of Teotoburg", description: nil, thumbnail: #imageLiteral(resourceName: "images"), characters: nil, category: "History", locked: true, progress: nil)
 
 //STORIES
-let storyLives: [Story] = [berlinoBrother, scienceStory, emptyStory, divinaCommediaStory]
+let storyLives: [Story] = [berlinoBrother, esplorationSpace, volcanoVesuvio, lastEarthquake, childChemist, promessiSposi, troianDefeat, wrathAchilles, journeyUlysses, hellDante, leonardoLife, raffaelloSchool, battleAlesia, cesareHistory, defeatTeotoburg]
 
 
 
