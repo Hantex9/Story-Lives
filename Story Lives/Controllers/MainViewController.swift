@@ -15,14 +15,16 @@ class MainViewController: UITableViewController {
     
     var tag: Int = 0
     var counter: Int = 0
+    var countStories: Int = 0
     
     fileprivate let heightRows: CGFloat = 223.0 //Height of the rows
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
     }
     
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,6 +46,8 @@ class MainViewController: UITableViewController {
         cell.collectionView.dataSource = self
         cell.collectionView.delegate = self
         self.counter = 0
+        self.countStories = 0
+        print("DEL --> \(cell.collectionView.tag)")
         return cell
     }
     
@@ -74,32 +78,46 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        var countStories: Int = 0
         for story in storyLive {
             if story.category == categories[collectionView.tag] {
-                countStories += 1
+                self.countStories += 1
             }
         }
-        return countStories
+        return self.countStories
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCell", for: indexPath) as! MainCollectionViewCell
         let category: String = categories[collectionView.tag]
+        
+//        while (self.countStories != 0) {
+//            for (index,story) in storyLive.enumerated() {
+//                if self.counter < (index + 1) && story.category == category {
+//                    cell.storyImage.image = storyLive[index].thumbnail
+//                    cell.storyTitle.text = storyLive[index].title
+//                    self.countStories -= 1
+//                    break
+//                }
+//            }
+//        }
+        
+        print("Collection Cell")
         for (index,story) in storyLive.enumerated() {
             if index >= self.counter && story.category == category {
                 cell.storyImage.image = storyLive[index].thumbnail
                 cell.storyTitle.text = storyLive[index].title
+                print("Index:" + String(index))
+                self.counter = index + 1
+                print(self.counter)
                 break
             }
         }
-        self.counter += 1
         return cell
     }
     
     
     func alertAnswer() {
-        let alert = UIAlertController(title: "Error", message: "Try again...", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Story not available", message: "Coming soon...", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default){ action in
         })
         present(alert, animated: true, completion: nil)
@@ -126,27 +144,3 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
