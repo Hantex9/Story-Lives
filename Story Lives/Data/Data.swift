@@ -79,7 +79,7 @@ let answerEleven2 = Answer(text: "Go to sleep", pointer: nodeSadFinal2)
 //Go to noise - HAPPY!
 let nodeHappyFinal2 = Node(type: .Final, text: "West starts running at breakneck speed towards the noise. Slowly, other people start to pour into the street in a chaotic way. The noises come from the Wall. What is happening? The huge expanse of cement that separates them from their loved ones has finally fallen down. A thousand curious looks could be glimpsed on the other side of the Wall, all of which remained hidden for too long. Among them, West recognizes a family portrait ... Est.", question: "", image: #imageLiteral(resourceName: "images"), answers: nil)
 //Go to sleep - SAD!
-let nodeSadFinal2 = Node(type: .Final, text: "West goes up to his room… Another day is over. What will happen tomorrow? -, he asks carefreely. But, in his heart, he knows that sooner or later he will emberce closely his brother.", question: "", image: #imageLiteral(resourceName: "images"), answers: nil)
+let nodeSadFinal2 = Node(type: .Final, text: "West goes up to his room… Another day is over. What will happen tomorrow? He asks carefreely. But, in his heart, he knows that sooner or later he will emberce closely his brother.", question: "", image: #imageLiteral(resourceName: "images"), answers: nil)
 //Watch the stars ---> (GO TO NOISE - GO TO SLEEP)
 let nodeNine2 = Node(type: .Normal, text: "West sits on the front steps of the house. He loves looking at the stars. Suddenly, a roar breaks through the sky and, soon after, the sound of sirens and dogs in the distance envelops the silent night.", question: "", image: #imageLiteral(resourceName: "images"), answers: [answerTen2, answerEleven2])
 //Play with friends ---> (BACK TO HOME - GO TO NOISE)
