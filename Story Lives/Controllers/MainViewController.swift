@@ -17,14 +17,14 @@ class MainViewController: UITableViewController {
     var counter: Int = 0
     var countStories: Int = 0
     
+    //Variabile che uso per salvarmi in un dizionario le storie inserite [index: categoria]
+    private var insertedHistory: [Int: String] = [:]
+    
     fileprivate let heightRows: CGFloat = 223.0 //Height of the rows
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UIApplication.shared.statusBarStyle = .lightContent
     }
-    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,7 +42,7 @@ class MainViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! MainViewSectionCell
-        cell.collectionView.tag = indexPath.row + indexPath.section
+        cell.collectionView.tag = indexPath.section
         cell.collectionView.dataSource = self
         cell.collectionView.delegate = self
         self.counter = 0
@@ -67,8 +67,6 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30.0
     }
-    
-   
 }
 
 extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -90,31 +88,23 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCell", for: indexPath) as! MainCollectionViewCell
         let category: String = categories[collectionView.tag]
         
-//        while (self.countStories != 0) {
-//            for (index,story) in storyLive.enumerated() {
-//                if self.counter < (index + 1) && story.category == category {
-//                    cell.storyImage.image = storyLive[index].thumbnail
-//                    cell.storyTitle.text = storyLive[index].title
-//                    self.countStories -= 1
-//                    break
-//                }
-//            }
-//        }
-        
-        print("Collection Cell")
         for (index,story) in storyLive.enumerated() {
-            if index >= self.counter && story.category == category {
+            //se il valore contenente quell'indice ha una categoria diversa (se è diversa significa che è una stringa vuota) allora significa che non deve inserirlo perchè già è stato precedentemente inserito
+            if story.category == category && self.insertedHistory[index] != category {
                 cell.storyImage.image = storyLive[index].thumbnail
                 cell.storyTitle.text = storyLive[index].title
-                print("Index:" + String(index))
-                self.counter = index + 1
-                print(self.counter)
+                self.counter = index + 1 //Variabile deprecata, da eliminare
+                
+                //A questo punto una volta inserito tutto metto l'indice nel dizionario salvandomi la sua categoria, in modo tale che se la prossima fa il for che inizia da 0, controlla se essa è già presente o meno.
+                self.insertedHistory[index] = category
                 break
             }
         }
+        
+        print("STO CARICANDO LE CELLE DELLA CATEGORIA \(collectionView.tag)")
+
         return cell
     }
-    
     
     func alertAnswer() {
         let alert = UIAlertController(title: "Story not available", message: "Coming soon...", preferredStyle: UIAlertControllerStyle.alert)
