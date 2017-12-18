@@ -25,7 +25,7 @@ public class CollectionViewFlowLayout: UICollectionViewFlowLayout {
         itemSize = CGSize(width: Constants.itemWidth, height: collectionView!.frame.height * 0.8)
         minimumLineSpacing = Constants.minLineSpacing
         
-        sectionInset = UIEdgeInsetsMake(100.0, 65.0, 100, 60.0)
+        sectionInset = UIEdgeInsetsMake(0, 65.0, 0, 60.0)
     }
     
     // Here is where the magic happens
