@@ -77,7 +77,9 @@ class NodeViewController: UIViewController {
     }
     
     @IBAction func finishStory(_ sender: UIButton) {
-        print("Go back to main view.")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MainView") as UIViewController
+        present(viewController, animated: true, completion: nil)
     }
     
 }
