@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Merriweather-Bold.otf">
+            <string>Merriweather-Bold</string>
+        </array>
         <array key="Merriweather-Light.otf">
             <string>Merriweather-Light</string>
         </array>
@@ -136,7 +139,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-dI-abm">
-                                <rect key="frame" x="94" y="599" width="186" height="48"/>
+                                <rect key="frame" x="94" y="602" width="186" height="48"/>
                                 <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Bt5-Wc-ogi"/>
@@ -156,13 +159,13 @@
                                     <constraint firstAttribute="height" constant="35" id="33i-SP-pib"/>
                                     <constraint firstAttribute="width" constant="35" id="mlw-xE-6Tu"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="delete"/>
+                                <state key="normal" backgroundImage="deleteNew"/>
                                 <connections>
                                     <action selector="closeButton:" destination="Grf-Xk-9Ue" eventType="touchUpInside" id="hLh-2A-lrP"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkR-df-1QC">
-                                <rect key="frame" x="24" y="355" width="327" height="210"/>
+                                <rect key="frame" x="24" y="372" width="327" height="210"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="Gn8-rJ-Tvq"/>
@@ -171,19 +174,27 @@
                                 <fontDescription key="fontDescription" name="Merriweather-Light" family="Merriweather" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxg-bd-vK8">
+                                <rect key="frame" x="29" y="344" width="49" height="23"/>
+                                <fontDescription key="fontDescription" name="Merriweather-Bold" family="Merriweather" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WkR-df-1QC" firstAttribute="top" secondItem="anH-jO-tLJ" secondAttribute="bottom" constant="21" id="1NB-OA-An2"/>
+                            <constraint firstItem="WkR-df-1QC" firstAttribute="top" secondItem="Jxg-bd-vK8" secondAttribute="bottom" constant="5" id="Bgd-t1-Ddi"/>
                             <constraint firstItem="mDG-Gq-7eA" firstAttribute="trailing" secondItem="5F0-4a-zY0" secondAttribute="trailing" constant="20" id="C6a-no-xK0"/>
                             <constraint firstItem="anH-jO-tLJ" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" id="CHQ-w1-hBd"/>
                             <constraint firstItem="anH-jO-tLJ" firstAttribute="top" secondItem="eKY-Eb-vqK" secondAttribute="top" id="Ggf-uP-WXJ"/>
                             <constraint firstItem="Uqj-dI-abm" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" constant="94" id="MMI-rk-RNQ"/>
                             <constraint firstItem="mDG-Gq-7eA" firstAttribute="trailing" secondItem="WkR-df-1QC" secondAttribute="trailing" constant="24" id="VdB-GX-tfx"/>
                             <constraint firstItem="WkR-df-1QC" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" constant="24" id="aT2-GL-qeB"/>
+                            <constraint firstItem="Jxg-bd-vK8" firstAttribute="top" secondItem="anH-jO-tLJ" secondAttribute="bottom" constant="10" id="bid-1o-pMO"/>
                             <constraint firstItem="anH-jO-tLJ" firstAttribute="trailing" secondItem="mDG-Gq-7eA" secondAttribute="trailing" id="jM2-Hn-0dl"/>
                             <constraint firstItem="5F0-4a-zY0" firstAttribute="top" secondItem="eKY-Eb-vqK" secondAttribute="top" constant="20" id="jgm-iR-U8U"/>
-                            <constraint firstItem="Uqj-dI-abm" firstAttribute="top" secondItem="WkR-df-1QC" secondAttribute="bottom" constant="34" id="oaw-Pt-B9P"/>
+                            <constraint firstItem="Uqj-dI-abm" firstAttribute="top" secondItem="WkR-df-1QC" secondAttribute="bottom" constant="20" id="oaw-Pt-B9P"/>
+                            <constraint firstItem="Jxg-bd-vK8" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" constant="29" id="qTa-hd-6VC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mDG-Gq-7eA"/>
                     </view>
@@ -191,6 +202,7 @@
                         <outlet property="playButton" destination="Uqj-dI-abm" id="O8E-Mm-wui"/>
                         <outlet property="previewDescription" destination="WkR-df-1QC" id="YPf-9Y-HUy"/>
                         <outlet property="previewImage" destination="anH-jO-tLJ" id="2Fo-nj-ose"/>
+                        <outlet property="titleStory" destination="Jxg-bd-vK8" id="PS6-dS-PK6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMK-fc-I9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -207,6 +219,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="delete" width="13" height="13"/>
+        <image name="deleteNew" width="35" height="35"/>
     </resources>
 </document>

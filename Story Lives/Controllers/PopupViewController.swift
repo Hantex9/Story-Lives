@@ -13,6 +13,7 @@ class PopupViewController: UIViewController {
     @IBOutlet weak var previewImage: UIImageView!
     @IBOutlet weak var previewDescription: UITextView!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var titleStory: UILabel!
     
     override var prefersStatusBarHidden: Bool { return true } //Hide the status bar on the pop-up view
     
@@ -26,6 +27,7 @@ class PopupViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.previewImage.image = DataSource.shared.getCurrentStory()?.thumbnail
         self.previewDescription.text = DataSource.shared.getCurrentStory()?.description
+        self.titleStory.text = DataSource.shared.getCurrentStory()?.title
     }
 
     override func didReceiveMemoryWarning() {
