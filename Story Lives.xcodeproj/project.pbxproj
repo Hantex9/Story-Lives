@@ -15,7 +15,6 @@
 		DB1668391FE40DA600AA2E8A /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668351FE40DA400AA2E8A /* Merriweather-Regular.otf */; };
 		DB16683A1FE40DA600AA2E8A /* Merriweather-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668361FE40DA500AA2E8A /* Merriweather-Black.otf */; };
 		DB16683B1FE40DA600AA2E8A /* Merriweather-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668371FE40DA500AA2E8A /* Merriweather-Bold.otf */; };
-		DB16683C1FE40DA600AA2E8A /* Merriweather-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668381FE40DA500AA2E8A /* Merriweather-Light.otf */; };
 		DB1E20531FE028C500239D02 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1E20521FE028C400239D02 /* DataSource.swift */; };
 		DB1E20551FE0374900239D02 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1E20541FE0374900239D02 /* Answer.swift */; };
 		DB1E20581FE03D8300239D02 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1E20571FE03D8300239D02 /* Data.swift */; };
@@ -26,6 +25,7 @@
 		DB64031F1FE18114006CA029 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64031E1FE18114006CA029 /* MainCollectionViewCell.swift */; };
 		F343954B1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343954A1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift */; };
 		F390DABE1FE07C0D00C257A4 /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F390DABD1FE07C0D00C257A4 /* CollectionViewFlowLayout.swift */; };
+		F3D19D131FE9242B0052A3DB /* Merriweather-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668381FE40DA500AA2E8A /* Merriweather-Light.otf */; };
 		F3E7721C1FE2D757008718B3 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E772141FE2D747008718B3 /* OpenSans-Bold.ttf */; };
 		F3E7721D1FE2D757008718B3 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E772101FE2D746008718B3 /* OpenSans-ExtraBold.ttf */; };
 		F3E7721E1FE2D757008718B3 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E772131FE2D747008718B3 /* OpenSans-ExtraBoldItalic.ttf */; };
@@ -181,7 +181,6 @@
 				F3EC8FE91FDEE5770096E9DC /* Models */,
 				F3EC8FB91FDED4CD0096E9DC /* AppDelegate.swift */,
 				F3EC8FC01FDED4CD0096E9DC /* Assets.xcassets */,
-				F3EC8FC21FDED4CD0096E9DC /* LaunchScreen.storyboard */,
 				F3EC8FC51FDED4CD0096E9DC /* Info.plist */,
 			);
 			path = "Story Lives";
@@ -236,6 +235,7 @@
 		F3EC8FEB1FDEE58B0096E9DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F3EC8FC21FDED4CD0096E9DC /* LaunchScreen.storyboard */,
 				F3EC8FE71FDEE4C30096E9DC /* Character.storyboard */,
 				2A4C01B51FE175A400AC03E3 /* Node.storyboard */,
 				DB6403121FE17621006CA029 /* Main.storyboard */,
@@ -364,7 +364,7 @@
 				DB1668391FE40DA600AA2E8A /* Merriweather-Regular.otf in Resources */,
 				F3E772221FE2D80D008718B3 /* OpenSans-Light.ttf in Resources */,
 				F3E7721E1FE2D757008718B3 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
-				DB16683C1FE40DA600AA2E8A /* Merriweather-Light.otf in Resources */,
+				F3D19D131FE9242B0052A3DB /* Merriweather-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,7 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B487MU554C;
+				DEVELOPMENT_TEAM = 3PX7W6UA6Y;
 				INFOPLIST_FILE = "Story Lives/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appleacademy.Story-Lives";
@@ -578,7 +578,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B487MU554C;
+				DEVELOPMENT_TEAM = 3PX7W6UA6Y;
 				INFOPLIST_FILE = "Story Lives/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appleacademy.Story-Lives";

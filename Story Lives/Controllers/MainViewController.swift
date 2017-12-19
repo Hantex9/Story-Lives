@@ -23,6 +23,10 @@ class MainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard  let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else {
+            return
+        }
+        statusBar.backgroundColor = UIColor.white
     }
     // MARK: - Table view data source
 
