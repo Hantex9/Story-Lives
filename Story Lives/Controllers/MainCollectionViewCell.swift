@@ -18,7 +18,5 @@ class MainCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
         
         self.storyImage.layer.cornerRadius = 13.0
-        self.storyImage.layer.borderWidth = 1.0
-        self.storyImage.layer.borderColor = UIColor.lightGray.cgColor
     }
 }

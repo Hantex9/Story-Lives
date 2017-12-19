@@ -139,14 +139,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-dI-abm">
-                                <rect key="frame" x="94" y="607" width="186" height="48"/>
+                                <rect key="frame" x="94" y="585.5" width="186" height="48"/>
                                 <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Bt5-Wc-ogi"/>
                                     <constraint firstAttribute="width" constant="186" id="dkM-zC-eZk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="18"/>
-                                <state key="normal" title="Gioca">
+                                <state key="normal" title="Play">
                                     <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -165,18 +165,18 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkR-df-1QC">
-                                <rect key="frame" x="24" y="392" width="327" height="210"/>
+                                <rect key="frame" x="24" y="395.5" width="327" height="190"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="Gn8-rJ-Tvq"/>
+                                    <constraint firstAttribute="height" constant="190" id="Gn8-rJ-Tvq"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name="Merriweather-Light" family="Merriweather" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxg-bd-vK8">
-                                <rect key="frame" x="29" y="364" width="49" height="23"/>
-                                <fontDescription key="fontDescription" name="Merriweather-Bold" family="Merriweather" pointSize="18"/>
+                                <rect key="frame" x="29" y="364" width="57" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Merriweather-Bold" family="Merriweather" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -187,13 +187,13 @@
                             <constraint firstItem="mDG-Gq-7eA" firstAttribute="trailing" secondItem="5F0-4a-zY0" secondAttribute="trailing" constant="20" id="C6a-no-xK0"/>
                             <constraint firstItem="anH-jO-tLJ" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" id="CHQ-w1-hBd"/>
                             <constraint firstItem="anH-jO-tLJ" firstAttribute="top" secondItem="eKY-Eb-vqK" secondAttribute="top" constant="20" id="Ggf-uP-WXJ"/>
-                            <constraint firstItem="Uqj-dI-abm" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" constant="94" id="MMI-rk-RNQ"/>
+                            <constraint firstItem="Uqj-dI-abm" firstAttribute="centerX" secondItem="eKY-Eb-vqK" secondAttribute="centerX" id="TuT-ci-zSw"/>
                             <constraint firstItem="mDG-Gq-7eA" firstAttribute="trailing" secondItem="WkR-df-1QC" secondAttribute="trailing" constant="24" id="VdB-GX-tfx"/>
                             <constraint firstItem="WkR-df-1QC" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" constant="24" id="aT2-GL-qeB"/>
                             <constraint firstItem="Jxg-bd-vK8" firstAttribute="top" secondItem="anH-jO-tLJ" secondAttribute="bottom" constant="10" id="bid-1o-pMO"/>
                             <constraint firstItem="anH-jO-tLJ" firstAttribute="trailing" secondItem="mDG-Gq-7eA" secondAttribute="trailing" id="jM2-Hn-0dl"/>
                             <constraint firstItem="5F0-4a-zY0" firstAttribute="top" secondItem="eKY-Eb-vqK" secondAttribute="top" constant="40" id="jgm-iR-U8U"/>
-                            <constraint firstItem="Uqj-dI-abm" firstAttribute="top" secondItem="WkR-df-1QC" secondAttribute="bottom" constant="5" id="oaw-Pt-B9P"/>
+                            <constraint firstItem="Uqj-dI-abm" firstAttribute="top" secondItem="WkR-df-1QC" secondAttribute="bottom" id="oaw-Pt-B9P"/>
                             <constraint firstItem="Jxg-bd-vK8" firstAttribute="leading" secondItem="mDG-Gq-7eA" secondAttribute="leading" constant="29" id="qTa-hd-6VC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mDG-Gq-7eA"/>
