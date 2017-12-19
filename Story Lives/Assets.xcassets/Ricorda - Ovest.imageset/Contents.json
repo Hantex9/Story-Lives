@@ -2,6 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Ricorda - Ovest.png",
       "scale" : "1x"
     },
     {
@@ -11,8 +12,13 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "Ricorda - Ovest.png",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Ricorda - Ovest@1x.png",
+      "unassigned" : true,
+      "scale" : "1x"
     }
   ],
   "info" : {

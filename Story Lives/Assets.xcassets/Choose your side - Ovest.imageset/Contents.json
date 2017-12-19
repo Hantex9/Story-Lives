@@ -2,23 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Ricorda - Est.png",
+      "filename" : "Choose your side - Ovest.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Ricorda - Est@2x.png",
+      "filename" : "Choose your side - Ovest@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Choose your side - Ovest@3x.png",
       "scale" : "3x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "Ricorda - Est@1x.png",
-      "unassigned" : true,
-      "scale" : "1x"
     }
   ],
   "info" : {

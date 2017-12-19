@@ -56,7 +56,7 @@ let nodeOne = Node(type: .Normal, text: "Berlin 1989 - East was a solitary child
 
 let arrayCharacterOne = [nodeOne, nodeTwo, nodeThree, nodeFour, nodeFive, nodeSix, nodeSeven, nodeEight, nodeNine, nodeSadFinal, nodeHappyFinal]
 
-let characterOne = Character(name: "Est", description: "East is a solitary child with very few interests and is curious but shy. He's always afraid of doing something wrong and getting his family in troubles.", avatar:#imageLiteral(resourceName: "images"), node: arrayCharacterOne)
+let characterOne = Character(name: "Est", description: "East is a solitary child with very few interests and is curious but shy. He's always afraid of doing something wrong and getting his family in troubles.", avatar:#imageLiteral(resourceName: "Choose your side - Est"), node: arrayCharacterOne)
 
 // NODE STORY CHARCTER TWO
 //Starter
@@ -101,10 +101,10 @@ let nodeOne2 = Node(type: .Normal, text: "Berlin 1989 - West was a sunny and car
 
 let arrayCharacterTwo = [nodeOne2, nodeTwo2, nodeThree2, nodeFour2, nodeFive2, nodeSix2, nodeSeven2, nodeEight2, nodeNine2, nodeSadFinal2, nodeHappyFinal2]
 
-let characterTwo = Character(name: "Ovest", description: "West is a sunny and carefree child, also very curious and extrovert. But he is very nostalgic because he is sad without his brother.", avatar: #imageLiteral(resourceName: "Inizio ovest"), node: arrayCharacterTwo)
+let characterTwo = Character(name: "Ovest", description: "West is a sunny and carefree child, also very curious and extrovert. But he is very nostalgic because he is sad without his brother.", avatar: #imageLiteral(resourceName: "Choose your side - Ovest"), node: arrayCharacterTwo)
 
 //Berlino Story
-let berlinoBrother = Story(title: "Berlino Brothers", description: "This story tells the fall of the Berlin Wall in 1989, which divided Germany in the East and in the West through the parallel lives of two brothers.", thumbnail: #imageLiteral(resourceName: "images"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
+let berlinoBrother = Story(title: "Berlino Brothers", description: "This story tells the fall of the Berlin Wall in 1989, which divided Germany in the East and in the West through the parallel lives of two brothers.", thumbnail: #imageLiteral(resourceName: "Merged Cover"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
 
 //Locked Stories
 //SCIENCE
