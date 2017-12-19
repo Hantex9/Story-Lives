@@ -104,21 +104,21 @@ let arrayCharacterTwo = [nodeOne2, nodeTwo2, nodeThree2, nodeFour2, nodeFive2, n
 let characterTwo = Character(name: "Ovest", description: "West is a sunny and carefree child, also very curious and extrovert. But he is very nostalgic because he is sad without his brother.", avatar: #imageLiteral(resourceName: "Choose your side - Ovest"), node: arrayCharacterTwo)
 
 //Berlino Story
-let berlinoBrother = Story(title: "Berlino Brothers", description: "This story tells the fall of the Berlin Wall in 1989, which divided Germany in the East and in the West through the parallel lives of two brothers.", thumbnail: #imageLiteral(resourceName: "Merged Cover"), characters: [characterOne, characterTwo], category: "History", locked: false, progress: nil)
+let berlinoBrother = Story(title: "Berlino Brothers", description: "This story tells the fall of the Berlin Wall in 1989, which divided Germany in the East and in the West through the parallel lives of two brothers.", thumbnail: #imageLiteral(resourceName: "Merged Cover"), characters: [characterTwo, characterOne], category: "History", locked: false, progress: nil, imageForDescription: #imageLiteral(resourceName: "Merged Cover"))
 
 //Locked Stories
 //SCIENCE
-let esplorationSpace = Story(title: "Exploration of Space", description: nil, thumbnail: #imageLiteral(resourceName: "science1"), characters: nil, category: "Science", locked: true, progress: nil)
-let volcanoVesuvio = Story(title: "The Volcano Vesuvio", description: nil, thumbnail: #imageLiteral(resourceName: "science2"), characters: nil, category: "Science", locked: true, progress: nil)
-let childChemist = Story(title: "The Child Chemist", description: nil, thumbnail:#imageLiteral(resourceName: "science3"), characters: nil, category: "Science", locked: true, progress: nil)
+let esplorationSpace = Story(title: "Exploration of Space", description: nil, thumbnail: #imageLiteral(resourceName: "science1"), characters: nil, category: "Science", locked: true, progress: nil, imageForDescription: nil)
+let volcanoVesuvio = Story(title: "The Volcano Vesuvio", description: nil, thumbnail: #imageLiteral(resourceName: "science2"), characters: nil, category: "Science", locked: true, progress: nil, imageForDescription: nil)
+let childChemist = Story(title: "The Child Chemist", description: nil, thumbnail:#imageLiteral(resourceName: "science3"), characters: nil, category: "Science", locked: true, progress: nil, imageForDescription: nil)
 
 //ART HISTORY
-let vitruvianMan = Story(title: "Vitruvian Man", description: nil, thumbnail: #imageLiteral(resourceName: "art2"), characters: nil, category: "Art History", locked: true, progress: nil)
-let classicism = Story(title: "Classicism", description: nil, thumbnail: #imageLiteral(resourceName: "art1"), characters: nil, category: "Art History", locked: true, progress: nil)
+let vitruvianMan = Story(title: "Vitruvian Man", description: nil, thumbnail: #imageLiteral(resourceName: "art2"), characters: nil, category: "Art History", locked: true, progress: nil, imageForDescription: nil)
+let classicism = Story(title: "Classicism", description: nil, thumbnail: #imageLiteral(resourceName: "art1"), characters: nil, category: "Art History", locked: true, progress: nil, imageForDescription: nil)
 
 //HISTORY
-let siegeOfConstantinople = Story(title: "Siege of Constantinople", description: nil, thumbnail: #imageLiteral(resourceName: "history2"), characters: nil, category: "History", locked: true, progress: nil)
-let battleOfStalingrad = Story(title: "Battle of Stalingrad", description: nil, thumbnail: #imageLiteral(resourceName: "history3"), characters: nil, category: "History", locked: true, progress: nil)
+let siegeOfConstantinople = Story(title: "Siege of Constantinople", description: nil, thumbnail: #imageLiteral(resourceName: "history2"), characters: nil, category: "History", locked: true, progress: nil, imageForDescription: nil)
+let battleOfStalingrad = Story(title: "Battle of Stalingrad", description: nil, thumbnail: #imageLiteral(resourceName: "history3"), characters: nil, category: "History", locked: true, progress: nil, imageForDescription: nil)
 
 //STORIES
 let storyLives: [Story] = [berlinoBrother, siegeOfConstantinople, battleOfStalingrad, esplorationSpace, volcanoVesuvio, childChemist, vitruvianMan, classicism]

@@ -21,6 +21,12 @@ class PopupViewController: UIViewController {
         
         playButton.layer.cornerRadius = playButton.frame.height / 2
         
+        guard  let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else {
+            return
+        }
+        
+        statusBar.backgroundColor = .none
+        
         super.viewDidLoad()
     }
     

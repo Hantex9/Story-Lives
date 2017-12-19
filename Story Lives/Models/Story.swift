@@ -18,8 +18,9 @@ class Story {
     var locked: Bool
     var progress: Node?
     var characterSelected: Character?
+    var imageForDescription: UIImage?
     
-    init (title: String, description: String?, thumbnail: UIImage, characters: [Character]?, category: String, locked: Bool, progress: Node?) {
+    init (title: String, description: String?, thumbnail: UIImage, characters: [Character]?, category: String, locked: Bool, progress: Node?, imageForDescription: UIImage?) {
         self.title = title
         self.description = description
         self.thumbnail = thumbnail
@@ -27,6 +28,7 @@ class Story {
         self.category = category
         self.locked = locked
         self.progress = progress
+        self.imageForDescription = imageForDescription
     }
     
     func getNumberOfCharacter() -> Int? {
