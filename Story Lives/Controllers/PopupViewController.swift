@@ -15,7 +15,7 @@ class PopupViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var titleStory: UILabel!
     
-    override var prefersStatusBarHidden: Bool { return true } //Hide the status bar on the pop-up view
+//    override var prefersStatusBarHidden: Bool { return false } //Hide the status bar on the pop-up view
     
     override func viewDidLoad() {
         

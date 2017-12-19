@@ -27,7 +27,14 @@ class CharactersViewController: UIViewController {
         pageControl.numberOfPages = collectionView.numberOfItems(inSection: 0)
         
         self.pageControl.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        
+        guard  let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else {
+            return
+        }
+        statusBar.backgroundColor = UIColor.white
+        
     }
+    
 }
 
 extension CharactersViewController: UICollectionViewDataSource {

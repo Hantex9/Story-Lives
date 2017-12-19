@@ -42,12 +42,10 @@ class NodeViewController: UIViewController {
         }
         currentNode = currentStory?.characterSelected?.nodes[0]
         updateView(pointer: currentNode)
+        let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
+        statusBar?.backgroundColor = UIColor.clear
         contentLabel.font = UIFont(name: "Merriweather", size: 17)
         finishStoryButton.isHidden = true
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,17 +73,13 @@ class NodeViewController: UIViewController {
             finishStoryButton.isHidden = false
         }
     }
-    
     @IBAction func returnToCharacterSelection(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "Character", bundle: nil)
-//        let viewController = storyboard.instantiateViewController(withIdentifier: "CharactersView") as UIViewController
-//        present(viewController, animated: true, completion: nil)
     }
     
     @IBAction func finishStory(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "MainView") as UIViewController
-        present(viewController, animated: true, completion: nil)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let viewController = storyboard.instantiateViewController(withIdentifier: "MainView") as UIViewController
+//        present(viewController, animated: true, completion: nil)
     }
     
 }

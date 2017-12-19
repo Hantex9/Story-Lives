@@ -12,6 +12,9 @@
 		2A4C018E1FE0070D00AC03E3 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C018D1FE0070D00AC03E3 /* Character.swift */; };
 		2A4C01B61FE175A400AC03E3 /* Node.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4C01B51FE175A400AC03E3 /* Node.storyboard */; };
 		2A4C01B81FE176AF00AC03E3 /* NodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C01B71FE176AF00AC03E3 /* NodeViewController.swift */; };
+		DB1605371FE95EA400653661 /* SwipeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1605361FE95EA400653661 /* SwipeLeft.swift */; };
+		DB1605391FE95F8200653661 /* SwipeRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1605381FE95F8200653661 /* SwipeRight.swift */; };
+		DB16053B1FE9621900653661 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16053A1FE9621900653661 /* DestinationViewController.swift */; };
 		DB1668391FE40DA600AA2E8A /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668351FE40DA400AA2E8A /* Merriweather-Regular.otf */; };
 		DB16683A1FE40DA600AA2E8A /* Merriweather-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668361FE40DA500AA2E8A /* Merriweather-Black.otf */; };
 		DB16683B1FE40DA600AA2E8A /* Merriweather-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668371FE40DA500AA2E8A /* Merriweather-Bold.otf */; };
@@ -65,6 +68,9 @@
 		2A4C018D1FE0070D00AC03E3 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		2A4C01B51FE175A400AC03E3 /* Node.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Node.storyboard; sourceTree = "<group>"; };
 		2A4C01B71FE176AF00AC03E3 /* NodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewController.swift; sourceTree = "<group>"; };
+		DB1605361FE95EA400653661 /* SwipeLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeLeft.swift; sourceTree = "<group>"; };
+		DB1605381FE95F8200653661 /* SwipeRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRight.swift; sourceTree = "<group>"; };
+		DB16053A1FE9621900653661 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		DB1668351FE40DA400AA2E8A /* Merriweather-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.otf"; sourceTree = "<group>"; };
 		DB1668361FE40DA500AA2E8A /* Merriweather-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.otf"; sourceTree = "<group>"; };
 		DB1668371FE40DA500AA2E8A /* Merriweather-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.otf"; sourceTree = "<group>"; };
@@ -228,6 +234,9 @@
 				DB64031A1FE17EC0006CA029 /* MainViewSectionCell.swift */,
 				DB64031E1FE18114006CA029 /* MainCollectionViewCell.swift */,
 				F343954A1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift */,
+				DB1605361FE95EA400653661 /* SwipeLeft.swift */,
+				DB1605381FE95F8200653661 /* SwipeRight.swift */,
+				DB16053A1FE9621900653661 /* DestinationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -390,7 +399,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB1E20531FE028C500239D02 /* DataSource.swift in Sources */,
+				DB1605391FE95F8200653661 /* SwipeRight.swift in Sources */,
 				DB6403151FE1788B006CA029 /* MainViewController.swift in Sources */,
+				DB16053B1FE9621900653661 /* DestinationViewController.swift in Sources */,
+				DB1605371FE95EA400653661 /* SwipeLeft.swift in Sources */,
 				F390DABE1FE07C0D00C257A4 /* CollectionViewFlowLayout.swift in Sources */,
 				DB64031B1FE17EC0006CA029 /* MainViewSectionCell.swift in Sources */,
 				F3EC8FED1FDEE6900096E9DC /* CharactersViewController.swift in Sources */,
@@ -563,7 +575,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PX7W6UA6Y;
+				DEVELOPMENT_TEAM = B487MU554C;
 				INFOPLIST_FILE = "Story Lives/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appleacademy.Story-Lives";
@@ -578,7 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PX7W6UA6Y;
+				DEVELOPMENT_TEAM = B487MU554C;
 				INFOPLIST_FILE = "Story Lives/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appleacademy.Story-Lives";

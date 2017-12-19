@@ -109,6 +109,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="finishStory:" destination="8A7-2O-R9m" eventType="touchUpInside" id="eOe-Hy-Ibc"/>
+                                                    <segue destination="hv9-Tb-3II" kind="custom" customClass="SwipeRightSegue" customModule="Story_Lives" customModuleProvider="target" id="0tU-Hf-j1U"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -140,25 +141,29 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-mR-6yD">
-                                <rect key="frame" x="15" y="40" width="13" height="22"/>
+                                <rect key="frame" x="15" y="40" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="3gV-Xu-Zjq"/>
+                                    <constraint firstAttribute="height" constant="30" id="WcB-uk-FsH"/>
+                                </constraints>
                                 <state key="normal" image="Back Chevron"/>
                                 <connections>
-                                    <action selector="returnToCharacterSelection:" destination="8A7-2O-R9m" eventType="touchUpInside" id="fMf-pV-wGJ"/>
-                                    <segue destination="6q1-QZ-U80" kind="show" id="sd3-PX-mCn"/>
+                                    <action selector="returnToCharacterSelection:" destination="8A7-2O-R9m" eventType="touchUpInside" id="eBW-cq-0RO"/>
+                                    <segue destination="6q1-QZ-U80" kind="custom" customClass="SwipeRightSegue" customModule="Story_Lives" customModuleProvider="target" id="wF2-YM-LEV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="centerX" secondItem="uHk-Xd-Eve" secondAttribute="centerX" id="1lG-MO-F8i"/>
-                            <constraint firstItem="rgw-mR-6yD" firstAttribute="leading" secondItem="uHk-Xd-Eve" secondAttribute="leading" constant="15" id="Fpl-EH-7s6"/>
+                            <constraint firstItem="rgw-mR-6yD" firstAttribute="top" secondItem="uHk-Xd-Eve" secondAttribute="top" constant="20" id="4vU-rK-uwe"/>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="leading" secondItem="uHk-Xd-Eve" secondAttribute="leading" id="IWk-yw-E0d"/>
                             <constraint firstItem="uHk-Xd-Eve" firstAttribute="trailing" secondItem="set-yi-byi" secondAttribute="trailing" id="MGG-C8-4id"/>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="top" secondItem="xWq-RF-ZXO" secondAttribute="top" id="NZl-Tn-030"/>
                             <constraint firstItem="set-yi-byi" firstAttribute="top" secondItem="hTF-au-xkT" secondAttribute="bottom" id="iVN-R3-m8Z"/>
                             <constraint firstItem="uHk-Xd-Eve" firstAttribute="bottom" secondItem="set-yi-byi" secondAttribute="bottom" id="lYV-iW-Qsv"/>
+                            <constraint firstItem="rgw-mR-6yD" firstAttribute="leading" secondItem="uHk-Xd-Eve" secondAttribute="leading" constant="15" id="ly3-Fy-l4J"/>
                             <constraint firstItem="set-yi-byi" firstAttribute="leading" secondItem="uHk-Xd-Eve" secondAttribute="leading" id="mNW-VQ-tsm"/>
-                            <constraint firstItem="rgw-mR-6yD" firstAttribute="top" secondItem="uHk-Xd-Eve" secondAttribute="top" constant="20" id="roS-jj-nq3"/>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="trailing" secondItem="uHk-Xd-Eve" secondAttribute="trailing" id="zfb-HE-jZ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uHk-Xd-Eve"/>
@@ -176,6 +181,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOI-co-Fmu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="195.6521739130435"/>
+        </scene>
+        <!--MainView-->
+        <scene sceneID="h1I-wX-YKp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainView" id="hv9-Tb-3II" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="av6-oi-HLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="499"/>
         </scene>
     </scenes>
     <resources>
