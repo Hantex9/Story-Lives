@@ -42,8 +42,11 @@
                                 <color key="currentPageIndicatorTintColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UJ9-Wl-iQ7">
-                                <rect key="frame" x="0.0" y="139" width="375" height="443"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="450"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="bEB-kZ-zvl"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="20" id="No9-Ma-CXh" customClass="CollectionViewFlowLayout" customModule="Story_Lives" customModuleProvider="target">
                                     <size key="itemSize" width="314" height="439"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -52,7 +55,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharactersViewCell" id="dAV-Qf-yQF" customClass="CharactersCollectionViewCell" customModule="Story_Lives" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="36.5" width="293" height="370"/>
+                                        <rect key="frame" x="30" y="40" width="293" height="370"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="293" height="370"/>
@@ -116,40 +119,36 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyJ-ZP-CBr">
-                                <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="25" width="105" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="gIX-vE-PZB"/>
-                                    <constraint firstAttribute="height" constant="50" id="qaT-GK-WLn"/>
+                                    <constraint firstAttribute="height" constant="30" id="OHG-PA-o6c"/>
+                                    <constraint firstAttribute="width" constant="105" id="hTt-5H-hpI"/>
                                 </constraints>
-                                <state key="normal" image="Back Chevron">
-                                    <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
+                                <state key="normal" title="  Back" image="Back Chevron">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="sNZ-6V-0Km" kind="custom" customClass="SwipeRightSegue" customModule="Story_Lives" customModuleProvider="target" id="5gV-6K-XEp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your character" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVk-MU-KUE">
-                                <rect key="frame" x="70" y="20" width="232" height="98.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="232" id="ZNL-in-bZl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="36"/>
-                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your side" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVk-MU-KUE">
+                                <rect key="frame" x="16" y="66" width="271" height="44"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="32"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UJ9-Wl-iQ7" firstAttribute="trailing" secondItem="5GK-a2-FnU" secondAttribute="trailing" id="0Wv-TQ-ei3"/>
-                            <constraint firstItem="WVk-MU-KUE" firstAttribute="top" secondItem="5GK-a2-FnU" secondAttribute="top" id="8SD-Nv-H9U"/>
-                            <constraint firstItem="MyJ-ZP-CBr" firstAttribute="top" secondItem="5GK-a2-FnU" secondAttribute="top" id="Faa-N8-QDF"/>
+                            <constraint firstItem="MyJ-ZP-CBr" firstAttribute="leading" secondItem="5GK-a2-FnU" secondAttribute="leading" id="1LM-WC-CJn"/>
+                            <constraint firstItem="MyJ-ZP-CBr" firstAttribute="top" secondItem="p4T-3n-p7Z" secondAttribute="top" constant="25" id="1m2-0w-vQY"/>
+                            <constraint firstItem="WVk-MU-KUE" firstAttribute="leading" secondItem="5GK-a2-FnU" secondAttribute="leading" constant="16" id="GKq-zm-Qox"/>
                             <constraint firstItem="uR4-Xe-tCa" firstAttribute="centerX" secondItem="5GK-a2-FnU" secondAttribute="centerX" id="IjT-6F-6Ci"/>
-                            <constraint firstItem="WVk-MU-KUE" firstAttribute="leading" secondItem="MyJ-ZP-CBr" secondAttribute="trailing" id="NLl-d9-bRj"/>
                             <constraint firstItem="uR4-Xe-tCa" firstAttribute="bottom" secondItem="5GK-a2-FnU" secondAttribute="bottom" id="XiA-pu-yXN"/>
-                            <constraint firstItem="MyJ-ZP-CBr" firstAttribute="leading" secondItem="5GK-a2-FnU" secondAttribute="leading" constant="20" id="dJN-gT-bk2"/>
-                            <constraint firstItem="uR4-Xe-tCa" firstAttribute="top" secondItem="UJ9-Wl-iQ7" secondAttribute="bottom" constant="48" id="dS4-4K-dXt"/>
+                            <constraint firstItem="uR4-Xe-tCa" firstAttribute="top" secondItem="UJ9-Wl-iQ7" secondAttribute="bottom" constant="40" id="dS4-4K-dXt"/>
                             <constraint firstItem="UJ9-Wl-iQ7" firstAttribute="leading" secondItem="5GK-a2-FnU" secondAttribute="leading" id="diD-OV-Jvz"/>
-                            <constraint firstItem="UJ9-Wl-iQ7" firstAttribute="top" secondItem="WVk-MU-KUE" secondAttribute="bottom" constant="20" id="zDO-X3-oE3"/>
+                            <constraint firstItem="UJ9-Wl-iQ7" firstAttribute="top" secondItem="WVk-MU-KUE" secondAttribute="bottom" constant="30" id="oIN-ac-7iY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5GK-a2-FnU"/>
                     </view>
