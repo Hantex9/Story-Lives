@@ -9,6 +9,16 @@
       "idiom" : "universal",
       "filename" : "Ricorda - Est@2x.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Ricorda - Est@1x.png",
+      "unassigned" : true,
+      "scale" : "1x"
     }
   ],
   "info" : {
