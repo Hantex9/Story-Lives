@@ -2,13 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Madame Bistrot.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
       "filename" : "Madame Bistrot@2x.png",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Madame Bistrot.png",
+      "scale" : "3x"
     }
   ],
   "info" : {
