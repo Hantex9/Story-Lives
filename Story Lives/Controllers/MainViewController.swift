@@ -14,7 +14,6 @@ class MainViewController: UITableViewController {
     let storyLive: [Story] = storyLives
     
     var tag: Int = 0
-    var counter: Int = 0
     var countStories: Int = 0
     
     //Variabile che uso per salvarmi in un dizionario le storie inserite [index: categoria]
@@ -45,9 +44,7 @@ class MainViewController: UITableViewController {
         cell.collectionView.tag = indexPath.section
         cell.collectionView.dataSource = self
         cell.collectionView.delegate = self
-        self.counter = 0
         self.countStories = 0
-        print("DEL --> \(cell.collectionView.tag)")
         return cell
     }
     
@@ -60,7 +57,7 @@ class MainViewController: UITableViewController {
         let headerView = view as! UITableViewHeaderFooterView
         headerView.textLabel?.textColor = UIColor.lightGray
         headerView.textLabel?.font = UIFont(name: "OpenSans", size: 14.0)
-        view.tintColor = UIColor.white
+        headerView.backgroundView?.backgroundColor = UIColor.white
     }
     
     //Distance from Section title and cells
@@ -93,7 +90,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             if story.category == category && self.insertedHistory[index] != category {
                 cell.storyImage.image = storyLive[index].thumbnail
                 cell.storyTitle.text = storyLive[index].title
-                self.counter = index + 1 //Variabile deprecata, da eliminare
                 
                 //A questo punto una volta inserito tutto metto l'indice nel dizionario salvandomi la sua categoria, in modo tale che se la prossima fa il for che inizia da 0, controlla se essa è già presente o meno.
                 self.insertedHistory[index] = category
@@ -101,8 +97,6 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }
         }
         
-        print("STO CARICANDO LE CELLE DELLA CATEGORIA \(collectionView.tag)")
-
         return cell
     }
     
