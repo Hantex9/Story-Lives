@@ -14,10 +14,6 @@ class SwipeLeft: UIStoryboardSegue {
         
         let src = self.source
         let dst = self.destination
-//        dst.prefersStatusBarHidden = false //Hide the status bar on the pop-up view
-//        let dst2 = dst.view as! DestinationViewController
-        let bar: Bool = dst.prefersStatusBarHidden
-        print(bar)
         src.view.superview?.insertSubview(dst.view, aboveSubview: src.view)
         dst.view.transform = CGAffineTransform(translationX: src.view.frame.size.width, y: 0)
         

@@ -14,7 +14,6 @@
 		2A4C01B81FE176AF00AC03E3 /* NodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4C01B71FE176AF00AC03E3 /* NodeViewController.swift */; };
 		DB1605371FE95EA400653661 /* SwipeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1605361FE95EA400653661 /* SwipeLeft.swift */; };
 		DB1605391FE95F8200653661 /* SwipeRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1605381FE95F8200653661 /* SwipeRight.swift */; };
-		DB16053B1FE9621900653661 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB16053A1FE9621900653661 /* DestinationViewController.swift */; };
 		DB1668391FE40DA600AA2E8A /* Merriweather-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668351FE40DA400AA2E8A /* Merriweather-Regular.otf */; };
 		DB16683A1FE40DA600AA2E8A /* Merriweather-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668361FE40DA500AA2E8A /* Merriweather-Black.otf */; };
 		DB16683B1FE40DA600AA2E8A /* Merriweather-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DB1668371FE40DA500AA2E8A /* Merriweather-Bold.otf */; };
@@ -70,7 +69,6 @@
 		2A4C01B71FE176AF00AC03E3 /* NodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewController.swift; sourceTree = "<group>"; };
 		DB1605361FE95EA400653661 /* SwipeLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeLeft.swift; sourceTree = "<group>"; };
 		DB1605381FE95F8200653661 /* SwipeRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRight.swift; sourceTree = "<group>"; };
-		DB16053A1FE9621900653661 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		DB1668351FE40DA400AA2E8A /* Merriweather-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.otf"; sourceTree = "<group>"; };
 		DB1668361FE40DA500AA2E8A /* Merriweather-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.otf"; sourceTree = "<group>"; };
 		DB1668371FE40DA500AA2E8A /* Merriweather-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.otf"; sourceTree = "<group>"; };
@@ -236,7 +234,6 @@
 				F343954A1FE1E4FD009AA1BE /* MainCollectionViewFlowLayout.swift */,
 				DB1605361FE95EA400653661 /* SwipeLeft.swift */,
 				DB1605381FE95F8200653661 /* SwipeRight.swift */,
-				DB16053A1FE9621900653661 /* DestinationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -401,7 +398,6 @@
 				DB1E20531FE028C500239D02 /* DataSource.swift in Sources */,
 				DB1605391FE95F8200653661 /* SwipeRight.swift in Sources */,
 				DB6403151FE1788B006CA029 /* MainViewController.swift in Sources */,
-				DB16053B1FE9621900653661 /* DestinationViewController.swift in Sources */,
 				DB1605371FE95EA400653661 /* SwipeLeft.swift in Sources */,
 				F390DABE1FE07C0D00C257A4 /* CollectionViewFlowLayout.swift in Sources */,
 				DB64031B1FE17EC0006CA029 /* MainViewSectionCell.swift in Sources */,
