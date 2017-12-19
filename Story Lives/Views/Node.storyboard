@@ -16,6 +16,14 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Character-->
+        <scene sceneID="yTJ-Pr-d7n">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CharactersView" storyboardName="Character" id="6q1-QZ-U80" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCL-nC-HAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698" y="34"/>
+        </scene>
         <!--Node View Controller-->
         <scene sceneID="Out-cD-uSe">
             <objects>
@@ -139,16 +147,26 @@
                                     <constraint firstAttribute="bottom" secondItem="WJb-GO-9XY" secondAttribute="bottom" id="uM6-50-EwB"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgw-mR-6yD">
+                                <rect key="frame" x="15" y="40" width="13" height="22"/>
+                                <state key="normal" image="Back Chevron"/>
+                                <connections>
+                                    <action selector="returnToCharacterSelection:" destination="8A7-2O-R9m" eventType="touchUpInside" id="fMf-pV-wGJ"/>
+                                    <segue destination="6q1-QZ-U80" kind="show" id="sd3-PX-mCn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="centerX" secondItem="uHk-Xd-Eve" secondAttribute="centerX" id="1lG-MO-F8i"/>
+                            <constraint firstItem="rgw-mR-6yD" firstAttribute="leading" secondItem="uHk-Xd-Eve" secondAttribute="leading" constant="15" id="Fpl-EH-7s6"/>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="leading" secondItem="uHk-Xd-Eve" secondAttribute="leading" id="IWk-yw-E0d"/>
                             <constraint firstItem="uHk-Xd-Eve" firstAttribute="trailing" secondItem="set-yi-byi" secondAttribute="trailing" id="MGG-C8-4id"/>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="top" secondItem="xWq-RF-ZXO" secondAttribute="top" id="NZl-Tn-030"/>
                             <constraint firstItem="set-yi-byi" firstAttribute="top" secondItem="hTF-au-xkT" secondAttribute="bottom" id="iVN-R3-m8Z"/>
                             <constraint firstItem="uHk-Xd-Eve" firstAttribute="bottom" secondItem="set-yi-byi" secondAttribute="bottom" id="lYV-iW-Qsv"/>
                             <constraint firstItem="set-yi-byi" firstAttribute="leading" secondItem="uHk-Xd-Eve" secondAttribute="leading" id="mNW-VQ-tsm"/>
+                            <constraint firstItem="rgw-mR-6yD" firstAttribute="top" secondItem="uHk-Xd-Eve" secondAttribute="top" constant="20" id="roS-jj-nq3"/>
                             <constraint firstItem="hTF-au-xkT" firstAttribute="trailing" secondItem="uHk-Xd-Eve" secondAttribute="trailing" id="zfb-HE-jZ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uHk-Xd-Eve"/>
@@ -169,6 +187,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Back Chevron" width="13" height="21"/>
         <image name="images" width="225" height="225"/>
     </resources>
 </document>
