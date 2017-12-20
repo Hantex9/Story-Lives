@@ -20,12 +20,11 @@ public class CollectionViewFlowLayout: UICollectionViewFlowLayout {
     public var activeDistance: CGFloat = 300
     
     override public func prepare() {
-        super.prepare()
-        
         itemSize = CGSize(width: Constants.itemWidth, height: collectionView!.frame.height * 0.8)
         minimumLineSpacing = Constants.minLineSpacing
         
         sectionInset = UIEdgeInsetsMake(0, 65.0, 0, 60.0)
+        super.prepare()
     }
     
     // Here is where the magic happens
