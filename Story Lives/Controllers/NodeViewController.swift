@@ -37,7 +37,7 @@ class NodeViewController: UIViewController {
             print("An unknown error occured.")
         }
         currentNode = currentStory?.characterSelected?.nodes[0]
-        updateView(pointer: currentNode)
+        updateView(pointer: currentNode, withAnimation: false)
         let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
         statusBar?.backgroundColor = UIColor.clear
         //contentLabel.font = UIFont(name: "OpenSans", size: 18)
@@ -55,26 +55,48 @@ class NodeViewController: UIViewController {
     }
     
     @IBAction func chooseFirstAnswer(_ sender: UIButton) {
-        updateView(pointer: currentNode?.answers?[0].pointer)
+        updateView(pointer: currentNode?.answers?[0].pointer, withAnimation: true)
     }
     
     @IBAction func chooseSecondAnswer(_ sender: UIButton) {
-        updateView(pointer: currentNode?.answers?[1].pointer)
+        updateView(pointer: currentNode?.answers?[1].pointer, withAnimation: true)
     }
     
-    func updateView(pointer: Node?) {
-        currentNode = pointer
-
-        self.nodeImageView.image = self.currentNode?.image
-        self.contentLabel.text = self.currentNode?.text
-        self.firstAnswerButton.setTitle(self.currentNode?.answers?[0].text, for: .normal)
-        self.secondAnswerButton.setTitle(self.currentNode?.answers?[1].text, for: .normal)
-        if (pointer?.type == .Final) {
-            firstAnswerButton.isHidden = true
-            secondAnswerButton.isHidden = true
-            finishStoryButton.isHidden = false
+    func updateView(pointer: Node?, withAnimation: Bool) {
+        if withAnimation {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.nodeImageView?.alpha = 0.0
+                self.contentView?.alpha = 0.0
+            }, completion: { _ in
+                self.currentNode = pointer
+                self.nodeImageView.image = self.currentNode?.image
+                self.contentLabel.text = self.currentNode?.text
+                self.firstAnswerButton.setTitle(self.currentNode?.answers?[0].text, for: .normal)
+                self.secondAnswerButton.setTitle(self.currentNode?.answers?[1].text, for: .normal)
+                if (pointer?.type == .Final) {
+                    self.firstAnswerButton.isHidden = true
+                    self.secondAnswerButton.isHidden = true
+                    self.finishStoryButton.isHidden = false
+                }
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.nodeImageView?.alpha = 1.0
+                    self.contentView?.alpha = 1.0
+                })
+            })
+        } else {
+            self.currentNode = pointer
+            self.nodeImageView.image = self.currentNode?.image
+            self.contentLabel.text = self.currentNode?.text
+            self.firstAnswerButton.setTitle(self.currentNode?.answers?[0].text, for: .normal)
+            self.secondAnswerButton.setTitle(self.currentNode?.answers?[1].text, for: .normal)
+            if (pointer?.type == .Final) {
+                self.firstAnswerButton.isHidden = true
+                self.secondAnswerButton.isHidden = true
+                self.finishStoryButton.isHidden = false
+            }
         }
     }
+    
     @IBAction func returnToCharacterSelection(_ sender: UIButton) {
     }
     
