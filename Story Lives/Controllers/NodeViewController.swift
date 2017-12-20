@@ -44,7 +44,7 @@ class NodeViewController: UIViewController {
         updateView(pointer: currentNode)
         let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
         statusBar?.backgroundColor = UIColor.clear
-        contentLabel.font = UIFont(name: "Merriweather", size: 17)
+        //contentLabel.font = UIFont(name: "OpenSans", size: 18)
         finishStoryButton.isHidden = true
     }
 
@@ -63,10 +63,11 @@ class NodeViewController: UIViewController {
     
     func updateView(pointer: Node?) {
         currentNode = pointer
-        nodeImageView.image = currentNode?.image
-        contentLabel.text = currentNode?.text
-        firstAnswerButton.setTitle(currentNode?.answers?[0].text, for: .normal)
-        secondAnswerButton.setTitle(currentNode?.answers?[1].text, for: .normal)
+
+        self.nodeImageView.image = self.currentNode?.image
+        self.contentLabel.text = self.currentNode?.text
+        self.firstAnswerButton.setTitle(self.currentNode?.answers?[0].text, for: .normal)
+        self.secondAnswerButton.setTitle(self.currentNode?.answers?[1].text, for: .normal)
         if (pointer?.type == .Final) {
             firstAnswerButton.isHidden = true
             secondAnswerButton.isHidden = true
