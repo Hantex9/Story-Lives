@@ -44,9 +44,6 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UJ9-Wl-iQ7">
                                 <rect key="frame" x="0.0" y="171" width="375" height="436"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="436" id="bEB-kZ-zvl"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="20" id="No9-Ma-CXh" customClass="CollectionViewFlowLayout" customModule="Story_Lives" customModuleProvider="target">
                                     <size key="itemSize" width="314" height="439"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -68,7 +65,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="293" height="370"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-RJ-Sup">
-                                                            <rect key="frame" x="88" y="13" width="117.5" height="23.5"/>
+                                                            <rect key="frame" x="81" y="13" width="131.5" height="27.5"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
                                                             <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -136,6 +133,7 @@
                             <constraint firstItem="uR4-Xe-tCa" firstAttribute="centerX" secondItem="5GK-a2-FnU" secondAttribute="centerX" id="IjT-6F-6Ci"/>
                             <constraint firstItem="UJ9-Wl-iQ7" firstAttribute="top" secondItem="WVk-MU-KUE" secondAttribute="bottom" constant="41" id="UtW-CU-E6g"/>
                             <constraint firstItem="uR4-Xe-tCa" firstAttribute="bottom" secondItem="5GK-a2-FnU" secondAttribute="bottom" id="XiA-pu-yXN"/>
+                            <constraint firstItem="uR4-Xe-tCa" firstAttribute="top" secondItem="UJ9-Wl-iQ7" secondAttribute="bottom" constant="23" id="bkk-C6-Rvd"/>
                             <constraint firstItem="UJ9-Wl-iQ7" firstAttribute="leading" secondItem="5GK-a2-FnU" secondAttribute="leading" id="diD-OV-Jvz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5GK-a2-FnU"/>
