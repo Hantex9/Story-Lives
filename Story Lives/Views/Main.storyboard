@@ -153,7 +153,7 @@
                                     <constraint firstAttribute="height" constant="35" id="33i-SP-pib"/>
                                     <constraint firstAttribute="width" constant="35" id="mlw-xE-6Tu"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="deleteNew"/>
+                                <state key="normal" backgroundImage="delete-3"/>
                                 <connections>
                                     <action selector="closeButton:" destination="Grf-Xk-9Ue" eventType="touchUpInside" id="hLh-2A-lrP"/>
                                 </connections>
@@ -213,6 +213,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="deleteNew" width="35" height="35"/>
+        <image name="delete-3" width="35" height="35"/>
     </resources>
 </document>
