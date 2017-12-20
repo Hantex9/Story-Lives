@@ -21,12 +21,12 @@ let answerThree = Answer(text: "Remember", pointer: nodeThree)
 let answerFour = Answer(text: "Sleep", pointer: nodeFour)
 //Sleep - Remember
 let answerFive = Answer(text: "Go to school", pointer: nodeFive)
-let answerSix = Answer(text: "Skip the school", pointer: nodeSix)
+let answerSix = Answer(text: "Skip school", pointer: nodeSix)
 //Go to School
 let answerSeven = Answer(text: "Back at home", pointer: nodeSeven)
 let answerEight = Answer(text: "Go to play", pointer: nodeEight)
 
-let answerNine = Answer(text: "Watch the stars", pointer: nodeNine)
+let answerNine = Answer(text: "Watch stars", pointer: nodeNine)
 
 let answerTen = Answer(text: "Go to noise",pointer: nodeHappyFinal)
 let answerEleven = Answer(text: "Go to sleep", pointer: nodeSadFinal)
@@ -67,12 +67,12 @@ let answerThree2 = Answer(text: "Remember", pointer: nodeThree2)
 let answerFour2 = Answer(text: "Sleep", pointer: nodeFour2)
 //Remember
 let answerFive2 = Answer(text: "Go to school", pointer: nodeFive2)
-let answerSix2 = Answer(text: "Skip the school", pointer: nodeSix2)
+let answerSix2 = Answer(text: "Skip school", pointer: nodeSix2)
 //Go to school - Skip the school - (...)
 let answerSeven2 = Answer(text: "Back at home", pointer: nodeSeven2)
 let answerEight2 = Answer(text: "Go to play", pointer: nodeEight2)
 
-let answerNine2 = Answer(text: "Watch the stars", pointer: nodeNine2)
+let answerNine2 = Answer(text: "Watch stars", pointer: nodeNine2)
 let answerTen2 = Answer(text: "Go to noise",pointer: nodeHappyFinal2)
 let answerEleven2 = Answer(text: "Go to sleep", pointer: nodeSadFinal2)
 
