@@ -68,7 +68,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="293" height="370"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-RJ-Sup">
-                                                            <rect key="frame" x="88" y="13" width="117.5" height="23.5"/>
+                                                            <rect key="frame" x="81" y="13" width="131.5" height="27.5"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
                                                             <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -113,7 +113,7 @@
                                     <constraint firstAttribute="width" constant="95" id="hTt-5H-hpI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
-                                <state key="normal" title="  Back" image="Back Chevron">
+                                <state key="normal" title="  Back" image="Back Chevron-2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -159,7 +159,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back Chevron" width="13" height="21"/>
+        <image name="Back Chevron-2" width="13" height="21"/>
         <image name="images" width="225" height="225"/>
     </resources>
 </document>
