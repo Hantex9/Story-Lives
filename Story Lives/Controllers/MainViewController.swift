@@ -16,8 +16,7 @@ class MainViewController: UITableViewController {
     var tag: Int = 0
     var countStories: Int = 0
     
-    //Variabile che uso per salvarmi in un dizionario le storie inserite [index: categoria]
-    private var insertedHistory: [Int: String] = [:]
+    private var insertedHistory: [String: [Story]] = [:]
     
     fileprivate let heightRows: CGFloat = 223.0 //Height of the rows
     
@@ -27,6 +26,18 @@ class MainViewController: UITableViewController {
             return
         }
         statusBar.backgroundColor = UIColor.white
+        
+        // Filtering the stories for category
+        var arrayStory: [Story] = []
+        for category in categories {
+            arrayStory.removeAll()
+            for story in storyLives {
+                if story.category == category {
+                    arrayStory.append(story)
+                }
+            }
+            self.insertedHistory[category] = arrayStory
+        }
     }
     // MARK: - Table view data source
 
@@ -76,30 +87,16 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        for story in storyLive {
-            if story.category == categories[collectionView.tag] {
-                self.countStories += 1
-            }
-        }
-        return self.countStories
+        
+        let category: String = categories[collectionView.tag]
+        return (self.insertedHistory[category]?.count)!
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "storyCell", for: indexPath) as! MainCollectionViewCell
         let category: String = categories[collectionView.tag]
-        
-        for (index,story) in storyLive.enumerated() {
-            //se il valore contenente quell'indice ha una categoria diversa (se è diversa significa che è una stringa vuota) allora significa che non deve inserirlo perchè già è stato precedentemente inserito
-            if story.category == category && self.insertedHistory[index] != category {
-                cell.storyImage.image = storyLive[index].thumbnail
-                cell.storyTitle.text = storyLive[index].title
-                
-                //A questo punto una volta inserito tutto metto l'indice nel dizionario salvandomi la sua categoria, in modo tale che se la prossima fa il for che inizia da 0, controlla se essa è già presente o meno.
-                self.insertedHistory[index] = category
-                break
-            }
-        }
-        
+        cell.storyImage.image = self.insertedHistory[category]![indexPath.item].thumbnail
+        cell.storyTitle.text = self.insertedHistory[category]![indexPath.item].title
         return cell
     }
     
