@@ -31,7 +31,7 @@ class PopupViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.previewImage.image = DataSource.shared.getCurrentStory()?.thumbnail
+        self.previewImage.image = DataSource.shared.getCurrentStory()?.imageForDescription
         self.previewDescription.text = DataSource.shared.getCurrentStory()?.description
         self.titleStory.text = DataSource.shared.getCurrentStory()?.title
     }
