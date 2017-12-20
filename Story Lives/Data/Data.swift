@@ -32,7 +32,7 @@ let answerTen = Answer(text: "Go to noise",pointer: nodeHappyFinal)
 let answerEleven = Answer(text: "Go to sleep", pointer: nodeSadFinal)
 
 //Go to noise - HAPPY!
-let nodeHappyFinal = Node(type: .Final, text: "East starts running at breakneck speed towards the noise. What is happening? The huge expanse of cement that separates them from their loved ones is finally collapsing. A thousand curious glances could be glimpsed on the other side of the Wall, all of which remained hidden for too long. Among these East recognizes a family portrait...West.", question: "", image: #imageLiteral(resourceName: "happy-end-est"), answers: nil)
+let nodeHappyFinal = Node(type: .Final, text: "East starts running at breakneck speed towards the noise. What is happening? The huge expanse of cement has finally fallen down. A thousand curious looks could be glimpsed on the other side of the Wall, all of which remained hidden for too long. Among them, East recognizes a family portrait...West.", question: "", image: #imageLiteral(resourceName: "happy-end-est"), answers: nil)
 //Go to sleep - SAD!
 let nodeSadFinal = Node(type: .Final, text: "East goes up to his room. Finally, another day is over. What will happen tomorrow? He asks himself resigned. But, in his heart, hopes are light. He knows nothing will change.", question: "", image: #imageLiteral(resourceName: "Dormi Notte - Est"), answers: nil)
 //Watch the stars ---> (GO TO NOISE - GO TO SLEEP)
@@ -48,7 +48,7 @@ let nodeFive = Node(type: .Normal, text: "The school is a big and cold building.
 //Sleep ---> (GO TO SCHOOL - SKIP SCHOOL)
 let nodeFour = Node(type: .Normal, text: "In the morning, East wakes up with the usual smell of boiled potatoes. He does not like them very much. He eats them hastily, picks up those few shabby books and sets off on his way to school. He hates not having single book of his own. He hates studying and reading about those badly written books.", question: "", image: #imageLiteral(resourceName: "Dormi Giorno - Est"), answers: [answerFive, answerSix])
 //Remember ---> (GO TO SCHOOL - SKIP THE SCHOOL)
-let nodeThree = Node(type: .Normal, text: "When East received the visit from his aunt and uncle, they brought with them so many strange things. Curious sweets and chocolates. But now, enough with memories. East must go to sleep. East wakes up with the usual smell of boiled potatoes. He eats them hastily, picks up those few shabby books and sets off on his way to school.", question: "", image: #imageLiteral(resourceName: "Dormi Giorno - Est"), answers: [answerFive, answerSix])
+let nodeThree = Node(type: .Normal, text: "When East received the visit from his aunt and uncle, they brought with them so many strange things. Curious sweets and chocolates. East must go to sleep. East wakes up with the usual smell of boiled potatoes. He eats them hastily, picks up those few shabby books and sets off on his way to school.", question: "", image: #imageLiteral(resourceName: "Dormi Giorno - Est"), answers: [answerFive, answerSix])
 //Know More ---> (REMEMBER - SLEEP)
 let nodeTwo = Node(type: .Normal, text: "West is his older brother. They haven’t seen each other for 5 years, since his uncles’ last visit. West is its point of reference in that surreal city devastated by the war.", question: "", image: #imageLiteral(resourceName: "Ricorda - Est"), answers: [answerThree, answerFour])
 //Start ---> (KNOW MORE - I DON’T CARE)
