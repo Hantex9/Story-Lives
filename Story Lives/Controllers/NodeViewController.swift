@@ -63,10 +63,11 @@ class NodeViewController: UIViewController {
     
     func updateView(pointer: Node?) {
         currentNode = pointer
-        nodeImageView.image = currentNode?.image
-        contentLabel.text = currentNode?.text
-        firstAnswerButton.setTitle(currentNode?.answers?[0].text, for: .normal)
-        secondAnswerButton.setTitle(currentNode?.answers?[1].text, for: .normal)
+
+        self.nodeImageView.image = self.currentNode?.image
+        self.contentLabel.text = self.currentNode?.text
+        self.firstAnswerButton.setTitle(self.currentNode?.answers?[0].text, for: .normal)
+        self.secondAnswerButton.setTitle(self.currentNode?.answers?[1].text, for: .normal)
         if (pointer?.type == .Final) {
             firstAnswerButton.isHidden = true
             secondAnswerButton.isHidden = true

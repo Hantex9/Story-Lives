@@ -49,7 +49,6 @@ extension CharactersViewController: UICollectionViewDataSource {
         if let currentStory = DataSource.shared.getCurrentStory()?.characters![indexPath.item] {
             cell.avatar.image = currentStory.avatar
             cell.nameCharacter.text = currentStory.name
-            cell.descriptionCharacter.text = currentStory.description
         }
         return cell
     }
