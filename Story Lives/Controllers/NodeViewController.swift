@@ -44,7 +44,7 @@ class NodeViewController: UIViewController {
         updateView(pointer: currentNode)
         let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
         statusBar?.backgroundColor = UIColor.clear
-        contentLabel.font = UIFont(name: "Merriweather", size: 17)
+        //contentLabel.font = UIFont(name: "OpenSans", size: 18)
         finishStoryButton.isHidden = true
     }
 

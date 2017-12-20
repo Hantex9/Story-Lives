@@ -61,7 +61,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejt-3L-CMx">
                                                     <rect key="frame" x="0.0" y="0.0" width="293" height="370"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="Exn-AF-xfT">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Exn-AF-xfT">
                                                             <rect key="frame" x="0.0" y="0.0" width="293" height="370"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-RJ-Sup">
@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="width" constant="95" id="hTt-5H-hpI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
-                                <state key="normal" title="  Back" image="Back Chevron">
+                                <state key="normal" title="  Back" image="Back Chevron-2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -157,7 +157,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back Chevron" width="13" height="21"/>
-        <image name="images" width="225" height="225"/>
+        <image name="Back Chevron-2" width="13" height="21"/>
     </resources>
 </document>
