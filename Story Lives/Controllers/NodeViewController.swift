@@ -23,10 +23,6 @@ class NodeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        // Do any additional setup after loading the view.
         do {
             try currentStory = DataSource.shared.retrieveCurrentStory()
         } catch DataSourceError.invalidStory {
@@ -46,6 +42,11 @@ class NodeViewController: UIViewController {
         statusBar?.backgroundColor = UIColor.clear
         //contentLabel.font = UIFont(name: "OpenSans", size: 18)
         finishStoryButton.isHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {

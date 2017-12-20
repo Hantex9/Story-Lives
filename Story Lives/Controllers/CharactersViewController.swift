@@ -77,8 +77,9 @@ extension CharactersViewController: UIScrollViewDelegate, UICollectionViewDelega
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         DataSource.shared.getCurrentStory()?.characterSelected = DataSource.shared.getCurrentStory()?.characters![indexPath.item]
+        return true
     }
 }
 
