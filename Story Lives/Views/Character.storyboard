@@ -64,7 +64,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejt-3L-CMx">
                                                     <rect key="frame" x="0.0" y="0.0" width="293" height="370"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="Exn-AF-xfT">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Exn-AF-xfT">
                                                             <rect key="frame" x="0.0" y="0.0" width="293" height="370"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-RJ-Sup">
@@ -160,6 +160,5 @@
     </scenes>
     <resources>
         <image name="Back Chevron-2" width="13" height="21"/>
-        <image name="images" width="225" height="225"/>
     </resources>
 </document>
