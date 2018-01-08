@@ -22,10 +22,6 @@ class MainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard  let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else {
-            return
-        }
-        statusBar.backgroundColor = UIColor.white
         
         // Filtering the stories for category
         var arrayStory: [Story] = []
@@ -38,6 +34,13 @@ class MainViewController: UITableViewController {
             }
             self.insertedHistory[category] = arrayStory
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard  let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else {
+            return
+        }
+        statusBar.backgroundColor = UIColor.white
     }
     // MARK: - Table view data source
 

@@ -20,17 +20,16 @@ class PopupViewController: UIViewController {
     override func viewDidLoad() {
         
         playButton.layer.cornerRadius = playButton.frame.height / 2
-        
-        guard  let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else {
-            return
-        }
-        
-        statusBar.backgroundColor = .none
-        
+    
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        guard  let statusBar = (UIApplication.shared.value(forKey: "statusBarWindow") as AnyObject).value(forKey: "statusBar") as? UIView else {
+            return
+        }
+        statusBar.backgroundColor = .none
+        
         self.previewImage.image = DataSource.shared.getCurrentStory()?.imageForDescription
         self.previewDescription.text = DataSource.shared.getCurrentStory()?.description
         self.titleStory.text = DataSource.shared.getCurrentStory()?.title
