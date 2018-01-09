@@ -113,7 +113,7 @@ let volcanoVesuvio = Story(title: "The Volcano Vesuvio", description: nil, thumb
 let childChemist = Story(title: "The Child Chemist", description: nil, thumbnail:#imageLiteral(resourceName: "science3"), characters: nil, category: "Science", locked: true, progress: nil, imageForDescription: nil)
 
 //ART HISTORY
-let vitruvianMan = Story(title: "Vitruvian Man", description: nil, thumbnail: #imageLiteral(resourceName: "art2"), characters: nil, category: "Art History", locked: true, progress: nil, imageForDescription: nil)
+let vitruvianMan = Story(title: "Architecture", description: nil, thumbnail: #imageLiteral(resourceName: "art2"), characters: nil, category: "Art History", locked: true, progress: nil, imageForDescription: nil)
 let classicism = Story(title: "Classicism", description: nil, thumbnail: #imageLiteral(resourceName: "art1"), characters: nil, category: "Art History", locked: true, progress: nil, imageForDescription: nil)
 
 //HISTORY
